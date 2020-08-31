@@ -1,1 +1,61 @@
-/*CSS*/
+:root {
+    font-size: 20px;
+}
+
+body {
+    background-color: #1915e2;
+    color: #d32222;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 0 10px;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#reseaux>article>a>img {
+    width: 75px;
+    height: auto;
+    transition: all 1s;
+}
+
+#reseaux>article>a>img:hover {
+    transform: rotate(720deg);
+}
+
+footer {
+    background-color: grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: underline;
+}
+
+li {
+    list-style: circle;
+}
+
+@media screen and (max-width: 768px),
+(orientation: portrait) {
+    body {
+        text-align: center;
+    }
+    #reseaux {
+        flex-direction: column;
+    }
+    #reseaux>article>a>img {
+        margin: 20px 0;
+    }
+}
