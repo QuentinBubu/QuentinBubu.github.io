@@ -10,7 +10,6 @@ body {
 }
 
 main {
-    margin: 0 15px;
     text-align: center;
 }
 
@@ -29,6 +28,10 @@ main {
 
 #reseaux>article>a>img:hover {
     transform: rotate(720deg) scale(1.8);
+}
+
+#langages>section>article {
+    margin: 1rem 0;
 }
 
 #langages>section>article>a>figure>img:hover {
@@ -65,6 +68,9 @@ li {
 }
 
 @media (min-width: 769px) {
+    main {
+        margin: 0 15px;
+    }
     #langages>section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -88,5 +94,14 @@ li {
     }
     #reseaux>article>a>img {
         margin: 20px 0;
+    }
+    #langages>section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #langages>section>article>a>* {
+        display: flex;
+        justify-content: center;
     }
 }
