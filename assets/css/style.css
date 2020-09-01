@@ -1,16 +1,17 @@
 :root {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 body {
-    background-color: #1915e2;
-    color: #d32222;
+    background-color: #260f30;
+    color: #ab21c7;
     display: flex;
     flex-direction: column;
 }
 
 main {
-    margin: 0 10px;
+    margin: 0 15px;
+    text-align: center;
 }
 
 #reseaux {
@@ -27,11 +28,26 @@ main {
 }
 
 #reseaux>article>a>img:hover {
-    transform: rotate(720deg);
+    transform: rotate(720deg) scale(1.8);
+}
+
+#langages>section>article>a>figure>img:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+
+#langages>section>article>a>figure>img {
+    height: 5.5rem;
+    width: auto;
+    transition: all 750ms;
 }
 
 footer {
     background-color: grey;
+}
+
+footer>section>h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 h1,
@@ -41,10 +57,25 @@ h4,
 h5,
 h6 {
     text-decoration: underline;
+    margin: 2rem;
 }
 
 li {
     list-style: circle;
+}
+
+@media (min-width: 769px) {
+    #langages>section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #langages>section>article {
+        justify-self: center;
+    }
+    #langages>section>article>a>* {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 768px),
