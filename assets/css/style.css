@@ -29,6 +29,7 @@ main {
 
 #reseaux>p>a{
     word-break: break-all;
+    max-width: 100%;
 }
 
 #reseaux>article>a>img:hover {
