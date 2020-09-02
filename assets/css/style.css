@@ -27,11 +27,6 @@ main {
     transition: all 1s;
 }
 
-#reseaux>p>a{
-    word-break: break-all;
-    max-width: 100%;
-}
-
 #reseaux>article>a>img:hover {
     transform: rotate(720deg) scale(1.8);
 }
@@ -109,5 +104,9 @@ li {
     #langages>section>article>a>* {
         display: flex;
         justify-content: center;
+    }
+    footer>section>p>a {
+        display: block;
+        word-break: break-all;
     }
 }
