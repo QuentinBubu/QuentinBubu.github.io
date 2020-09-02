@@ -13,14 +13,29 @@
 <body>
     <header>
         <h1 title="Quentin Bubu">Quentin Bubu</h1>
+        <nav>
+            <ul>
+                <li>Sections
+                    <ul>
+                        <li><a href="#presentation">Je me présente</a></li>
+                        <li><a href="#front">Mes langages web Front-end</a></li>
+                        <li><a href="#back">Mes langages web Back-end</a></li>
+                        <li><a href="#others">Mes autres langages</a></li>
+                        <li><a href="#tools">Mes outils de développement</a></li>
+                        <li><a href="#networks">Mes réseaux</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <p title="Je me présente :)">
+        <p title="Je me présente :)" id="presentation">
             &#8195;Je m'appelle Quentin,<br />&#8195;Jeune développeur web fullstack, je suis perfectionniste et aime les codes <mark>bien fait & structurés</mark>.
         </p>
         <p title="Je me présente :)">Actuellement Lycéen, je suis sans cesse à la quête de l'apprentissage et de la <mark>meilleur maîtrise</mark> des divers langages et logiciels utilisés.</p>
+        <p>La <mark>rigourosité</mark>, la <mark>patience</mark>, la <mark>passion</mark> et <mark>l'envie</mark> sont mes principales qualités!</p>
         <article id="langages">
-            <h3>Mes langages connus Front-end:</h3>
+            <h3 id="front">Mes langages connus Front-end:</h3>
             <section>
                 <article title="Le HTML (Hypertext Markup Language)">
                     <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
@@ -53,7 +68,7 @@
                     </a>
                 </article>
             </section>
-            <h3>Mes langages & base de données connus Back-end:</h3>
+            <h3 id="back">Mes langages & base de données connus Back-end:</h3>
             <section>
                 <article title="Le PHP (PHP Hypertext Processor)">
                     <a href="https://www.php.net">
@@ -86,7 +101,7 @@
                     </a>
                 </article>
             </section>
-            <h3>Autres langages connus:</h3>
+            <h3 id="others">Autres langages connus:</h3>
             <section>
                 <article title="Arduino">
                     <a href="https://www.arduino.cc/">
@@ -109,7 +124,7 @@
                     </a>
                 </article>
             </section>
-            <h3>Mes outils de développement utilisés:</h3>
+            <h3 id="tools">Mes outils de développement utilisés:</h3>
             <section>
                 <article title="Visual Studio Code">
                     <a href="https://code.visualstudio.com/">
@@ -164,12 +179,12 @@
             </section>
         </article>
         <p>
-            Passionné par le ski (&lt;3 UwU), le tennis, le vélo, l'électronique, l'informatique et bien plus encore!!
+            Également passionné par le ski (&lt;3 ⛷ UwU), le tennis, le vélo, l'électronique, l'informatique et bien plus encore!!
         </p>
     </main>
     <footer>
         <section>
-            <h2>Mes réseaux:</h2>
+            <h2 id="networks">Mes réseaux:</h2>
             <section class="reseaux">
                 <article>
                     <a href="mailto:anagamesprint@gmail.com"><img src="./assets/picture/gmail.png" alt="Gmail Logo" /></a>
@@ -191,7 +206,7 @@
                 </article>
             </section>
             <h2>Les servers de développement sur lesquelles je suis présent:</h2>
-            <section class="reseaux">
+            <section class="reseaux grayscale">
                 <article>
                     <a href="https://discord.gg/3xRUnHB">
                         <p>Mon serveur: Pépouze</p>
@@ -218,6 +233,10 @@
                 </article>
             </section>
             <p>E-Mail: <a href="mailto:anagamesprint@gmail.com">anagamesprint@gmail.com</a></p>
+        </section>
+        <hr />
+        <section>
+            <p>Fait avec amour ❤ & passion, Quentin Bubu 😜</p>
         </section>
     </footer>
 </body>
