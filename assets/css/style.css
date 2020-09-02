@@ -1,11 +1,13 @@
 :root {
     font-size: 30px;
     font-family: 'Isabel';
+    --bgColor: #260f30;
+    --textColor: #ab21c7;
 }
 
 body {
-    background-color: #260f30;
-    color: #ab21c7;
+    background-color: var(--bgColor);
+    color: var(--textColor);
     display: flex;
     flex-direction: column;
 }
@@ -67,12 +69,40 @@ li {
 
 mark {
     font-weight: bold;
-    background-color: #ab21c7;
+    background-color: var(--textColor);
     /*color: #260730;*/
     mix-blend-mode: screen;
 }
 
+a {
+    display: inline-block;
+}
+
 @media (min-width: 769px) {
+    nav {
+        width: 75%;
+    }
+    nav>ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav>ul>li {
+        list-style: none;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+    nav>ul>li>ul {
+        display: none;
+        list-style: circle;
+        border: 2px dashed black;
+        box-shadow: 10px 5px 5px #2217c5;
+    }
+    nav>ul>li:hover>ul {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background-color: var(--bgColor);
+    }
     main {
         margin: 0 15px;
     }
@@ -95,6 +125,13 @@ mark {
         display: flex;
         justify-content: center;
     }
+    .grayscale>article>a {
+        transition: all 1s;
+        filter: grayscale(70%);
+    }
+    .grayscale>article>a:hover {
+        filter: grayscale(0%);
+    }
 }
 
 @media screen and (max-width: 768px),
@@ -104,6 +141,9 @@ mark {
     }
     h1 {
         margin: 0;
+    }
+    nav {
+        display: none;
     }
     .reseaux {
         display: flex;
@@ -124,12 +164,8 @@ mark {
         display: flex;
         justify-content: center;
     }
-    footer>section>p>a {}
-}
-
-display: block;
-word-break: break-all;
-
-}
-
+    footer>section>p>a {
+        display: block;
+        word-break: break-all;
+    }
 }
