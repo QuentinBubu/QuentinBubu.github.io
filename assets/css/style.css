@@ -145,6 +145,9 @@ a {
     nav {
         display: none;
     }
+    main {
+        margin: 0 5px;
+    }
     .reseaux {
         display: flex;
         justify-content: space-around;
