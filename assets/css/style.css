@@ -39,6 +39,10 @@ footer>section>h2 {
     margin-bottom: 0.5rem;
 }
 
+footer>section>p {
+    text-align: center;
+}
+
 .reseaux>article>a>img {
     width: 75px;
     height: auto;
@@ -65,13 +69,14 @@ h6 {
 
 li {
     list-style: circle;
+    cursor: pointer;
 }
 
 mark {
     font-weight: bold;
     background-color: var(--textColor);
-    /*color: #260730;*/
-    mix-blend-mode: screen;
+    color: var(--bgColor);
+    /*mix-blend-mode: screen;*/
 }
 
 a {
@@ -90,6 +95,8 @@ a {
         list-style: none;
         font-size: 1.2rem;
         text-decoration: underline;
+        display: flex;
+        justify-content: flex-end;
     }
     nav>ul>li>ul {
         display: none;
@@ -100,8 +107,16 @@ a {
     nav>ul>li:hover>ul {
         display: block;
         position: absolute;
+        margin-top: 1.5rem;
         z-index: 1;
         background-color: var(--bgColor);
+    }
+    nav>ul>li>ul>li>a {
+        display: block;
+    }
+    nav>ul>li:hover>ul>li>a:hover {
+        color: var(--bgColor);
+        background-color: var(--textColor);
     }
     main {
         margin: 0 15px;
@@ -144,9 +159,6 @@ a {
     }
     nav {
         display: none;
-    }
-    main {
-        margin: 0 5px;
     }
     .reseaux {
         display: flex;
