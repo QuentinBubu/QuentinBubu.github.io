@@ -5,6 +5,10 @@
     --textColor: #ab21c7;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bgColor);
     color: var(--textColor);
