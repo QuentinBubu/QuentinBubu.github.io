@@ -40,7 +40,7 @@ header>h1 {
 }
 
 main {
-    padding: 1%;
+    padding: 1.5%;
     border: solid var(--border) 5px;
     border-radius: var(--borderRadius);
     width: 98%;
@@ -83,10 +83,6 @@ aside{
     bottom: 50%;
 }
 
-aside>nav>ul{
-    list-style-type: "-";
-}
-
 aside>nav>ul>li{
     display: inline;
     font-size: 0.5rem;
@@ -96,11 +92,10 @@ aside>nav>ul>li:hover{
     color: var(--border);
 }
 
-
 footer {
     border: solid var(--border) 5px;
     margin: 20px;
-    padding: 1%;
+    padding: 1.5%;
     border-radius: var(--borderRadius);
     width: 98%;
 }
