@@ -231,6 +231,10 @@ hr {
     border-top-width: 1px
 }
 
+ul {
+    list-style-type: none;
+}
+
 img {
     border-style: solid
 }

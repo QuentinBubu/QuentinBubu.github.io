@@ -15,6 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    --scrollbar-width: calc(100vw - 100%);
 }
 
 header {
@@ -35,7 +37,6 @@ header>img {
 
 header>h1 {
     text-align: center;
-    width: calc(100% - 220px);
     font-size: 2rem;
 }
 
@@ -77,14 +78,13 @@ a {
 
 aside{
     position: fixed;
-    transform: rotate(90deg);
-    right: -355px;
     top: 50%;
-    bottom: 50%;
+    transform: translateY(-50%);
+    right: calc(var(--scrollbar-width) + 5px);
 }
 
 aside>nav>ul>li{
-    display: inline;
+    writing-mode: vertical-rl;
     font-size: 0.5rem;
 }
 
@@ -119,6 +119,9 @@ footer>section>section>article>a>img {
 }
 
 @media (min-width: 769px) {
+    header>h1 {
+        width: calc(100% - 220px);
+    }
     #langages>section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -132,7 +135,6 @@ footer>section>section>article>a>img {
         display: flex;
         justify-content: center;
     }
-
     footer>section>section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -146,6 +148,16 @@ footer>section>section>article>a>img {
 
 @media screen and (max-width: 768px),
 (orientation: portrait) {
+    *{
+        text-align: center;
+    }
+    :root{
+        font-size: 20px;
+    }
+    header {
+        flex-direction: column;
+        width: 98%;
+    }
     h1 {
         margin: 0;
     }
@@ -168,7 +180,6 @@ footer>section>section>article>a>img {
         align-items: center;
         flex-wrap: wrap;
     }
-
     footer>section>section>article>a>img {
         margin: 20px auto;
     }
