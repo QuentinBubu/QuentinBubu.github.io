@@ -80,7 +80,7 @@ aside{
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: calc(var(--scrollbar-width) + 5px);
+    right: var(--scrollbar-width);
 }
 
 aside>nav>ul>li{
