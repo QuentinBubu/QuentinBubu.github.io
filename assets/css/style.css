@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 :root {
     font-size: 30px;
-    font-family: 'Isabel';
-    --bgColor: #260f30;
-    --textColor: #ab21c7;
+    font-family: 'Josefin Sans', sans-serif;
+    --border: #3498db;
+    --borderRadius: 75px;
 }
 
 html {
@@ -10,18 +12,38 @@ html {
 }
 
 body {
-    background-color: var(--bgColor);
-    color: var(--textColor);
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin: 20px;
+    height: 120px;
+    border: solid var(--border) 5px;
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    width: 85%;
+    padding: 0.3%;
+}
+
+header>img {
+    border-radius: 50%;
+    height: 100%;
+}
+
+header>h1 {
+    text-align: center;
+    width: calc(100% - 220px);
+    font-size: 2rem;
 }
 
 main {
-    text-align: center;
-}
-
-#langages>section>article {
-    margin: 1rem 0;
+    padding: 1%;
+    border: solid var(--border) 5px;
+    border-radius: var(--borderRadius);
+    width: 98%;
 }
 
 #langages>section>article>a>figure>img {
@@ -30,8 +52,57 @@ main {
     padding: 10px;
 }
 
+#langages>#project + section>article>a>figure>img {
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: underline;
+    margin: 2rem 0;
+}
+
+mark {
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+}
+
+aside{
+    position: fixed;
+    transform: rotate(90deg);
+    right: -355px;
+    top: 50%;
+    bottom: 50%;
+}
+
+aside>nav>ul{
+    list-style-type: "-";
+}
+
+aside>nav>ul>li{
+    display: inline;
+    font-size: 0.5rem;
+}
+
+aside>nav>ul>li:hover{
+    color: var(--border);
+}
+
+
 footer {
-    background-color: grey;
+    border: solid var(--border) 5px;
+    margin: 20px;
+    padding: 1%;
+    border-radius: var(--borderRadius);
+    width: 98%;
 }
 
 footer>section>h2 {
@@ -52,102 +123,49 @@ footer>section>p {
     margin: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-decoration: underline;
-    margin: 2rem;
-}
-
-li {
-    list-style: circle;
-    cursor: pointer;
-}
-
-mark {
-    font-weight: bold;
-    background-color: var(--textColor);
-    color: var(--bgColor);
-    /*mix-blend-mode: screen;*/
-}
-
-a {
-    display: inline-block;
-}
-
 @media (min-width: 769px) {
-    nav {
-        width: 75%;
-    }
-    nav>ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-    nav>ul>li {
-        list-style: none;
-        font-size: 1.2rem;
-        text-decoration: underline;
-        display: flex;
-        justify-content: flex-end;
-    }
-    nav>ul>li>ul {
-        display: none;
-        list-style: circle;
-        border: 2px dashed black;
-        box-shadow: 10px 5px 5px #2217c5;
-    }
-    nav>ul>li:hover>ul {
-        display: block;
-        position: absolute;
-        margin-top: 1.5rem;
-        z-index: 1;
-        background-color: var(--bgColor);
-    }
-    nav>ul>li>ul>li>a {
-        display: block;
-    }
-    nav>ul>li:hover>ul>li>a:hover {
-        color: var(--bgColor);
-        background-color: var(--textColor);
-    }
-    main {
-        margin: 0 15px;
-    }
-    .reseaux {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .reseaux>article {
-        justify-self: center;
-        text-align: center;
-    }
     #langages>section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
     #langages>section>article {
         justify-self: center;
     }
+
     #langages>section>article>a>* {
         display: flex;
         justify-content: center;
+    }
+
+    .reseaux {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .reseaux>article {
+        justify-self: center;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 768px),
 (orientation: portrait) {
-    body {
-        text-align: center;
-    }
     h1 {
         margin: 0;
     }
-    nav {
-        display: none;
+
+    #langages>section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
+    #langages>section>article>a>* {
+        display: flex;
+        justify-content: center;
+    }
+
     .reseaux {
         display: flex;
         justify-content: space-around;
@@ -155,18 +173,11 @@ a {
         align-items: center;
         flex-wrap: wrap;
     }
+
     .reseaux>article>a>img {
         margin: 20px auto;
     }
-    #langages>section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #langages>section>article>a>* {
-        display: flex;
-        justify-content: center;
-    }
+
     footer>section>p>a {
         display: block;
         word-break: break-all;
