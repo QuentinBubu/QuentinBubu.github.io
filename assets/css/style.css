@@ -114,12 +114,12 @@ footer>section>p {
     text-align: center;
 }
 
-.reseaux>article>a>img {
+footer>section>section>article>a>img {
     width: 75px;
     height: auto;
 }
 
-.reseaux>article>a>img {
+footer>section>section>article>a>img {
     margin: auto;
 }
 
@@ -138,12 +138,12 @@ footer>section>p {
         justify-content: center;
     }
 
-    .reseaux {
+    footer>section>section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .reseaux>article {
+    footer>section>section>article {
         justify-self: center;
         text-align: center;
     }
@@ -166,7 +166,7 @@ footer>section>p {
         justify-content: center;
     }
 
-    .reseaux {
+    footer>section>section {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -174,7 +174,7 @@ footer>section>p {
         flex-wrap: wrap;
     }
 
-    .reseaux>article>a>img {
+    footer>section>section>article>a>img {
         margin: 20px auto;
     }
 
