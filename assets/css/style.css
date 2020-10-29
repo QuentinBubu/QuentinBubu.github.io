@@ -157,6 +157,11 @@ footer>section>section>article>a>img {
     header {
         flex-direction: column;
         width: 98%;
+        height: auto;
+    }
+    header>img{
+        height: 6rem;
+        width: auto;
     }
     h1 {
         margin: 0;
