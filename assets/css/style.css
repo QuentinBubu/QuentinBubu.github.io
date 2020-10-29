@@ -58,6 +58,11 @@ main {
     height: auto;
 }
 
+#langages>section>article>a>figcaption>img{
+    width: 50%;
+    height: auto;
+}
+
 h1,
 h2,
 h3,
