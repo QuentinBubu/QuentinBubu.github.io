@@ -3,8 +3,8 @@
 :root {
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
-    word-spacing: 0.3rem;
-    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.05rem;
 }
 
 html {
@@ -47,4 +47,13 @@ ul {
 
 ul img {
     width: 3em;
+}
+
+article>p{
+    text-align: justify;
+}
+
+article>p>a {
+    color: blue;
+    text-decoration: underline;
 }

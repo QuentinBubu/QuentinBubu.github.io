@@ -14,17 +14,26 @@
   </head>
   <body>
     <header>
-      <script>
-        window.addEventListener("load", function () {
-          let fileUrl = `/fake-news/header.html`;
-          fetch(fileUrl)
-            .then((r) => r.text())
-            .then((t) => document.querySelector('header').innerHTML = t);
-        });
-      </script>
+        <script>
+            window.addEventListener("load", function () {
+              let fileUrl = `/fake-news/header.html`;
+              fetch(fileUrl)
+                .then((r) => r.text())
+                .then((t) => document.querySelector('header').innerHTML = t);
+            });
+          </script>
     </header>
     <main>
-        <p>Ohh</p>
+      <script>
+        window.addEventListener("load", function () {
+          let url = new URL(window.location.href);
+          let article = url.searchParams.get("number");
+          let fileUrl = `/fake-news/articles/article${article}/content.html`;
+          fetch(fileUrl)
+            .then((r) => r.text())
+            .then((t) => document.querySelector('main').innerHTML = t);
+        });
+      </script>
     </main>
     <footer>
         <script>
