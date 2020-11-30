@@ -35,6 +35,22 @@ footer {
     justify-content: space-around;
 }
 
+h1,
+h2,
+h3 {
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-indent: 0.5rem;
+}
+h4,
+h5,
+h6 {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    text-indent: 1rem;
+}
+
 /*
  * Header
 */
@@ -49,11 +65,31 @@ ul img {
     width: 3em;
 }
 
-article>p{
-    text-align: justify;
+/*
+ * Aticles
+*/
+
+article {
+    padding: 0.5rem;
 }
 
-article>p>a {
+article>section:first-child>p{
+    text-align: end;
+    font-weight: 300;
+    font-size: 0.5rem;
+    font-style: italic;
+}
+
+article>section:last-child{
+    padding: 0 2rem;
+}
+
+article>section>p{
+    text-align: justify;
+    text-indent: 1.5rem;
+}
+
+article>section>p>a {
     color: blue;
     text-decoration: underline;
 }
