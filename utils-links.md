@@ -55,6 +55,7 @@ http://www.cssdesk.com/
 https://css-tricks.com/
 https://css-tricks.com/use-target_blank/
 https://fr.wikipedia.org/wiki/Aide:Purge_du_cache_du_navigateur
+https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/piechart.html
 
 
 ----------------------------------
@@ -133,3 +134,4 @@ Voilà, car:
 - Il intègre PostrgeSQL, MongoDB.
 - Il est très léger, peut être portable, est indépendant, rapide, facilement réglable.
 - Et j'en passe, la liste est longue...
+ 
