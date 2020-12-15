@@ -1,3 +1,4 @@
+https://codebeautify.org/jsonminifier
 http://cssgridgarden.com/#fr
 http://flexboxfroggy.com/#fr
 https://sharethis.com/fr/best-practices/2020/02/best-html-and-css-cheat-sheets/
