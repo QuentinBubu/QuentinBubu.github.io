@@ -1,0 +1,60 @@
+.underline {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.pronunciation {
+    width: 25px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+    font-weight: 850;
+}
+
+.green {
+    color: green;
+    font-weight: 850;
+}
+
+.blue {
+    color: blue;
+    font-weight: 850;
+}
+
+label {
+    vertical-align: unset;
+}
+
+input {
+    margin: .5rem;
+}
+
+#selection {
+    display: grid;
+    grid-template-columns: repeat(8, .5fr 2fr);
+}
+
+#selection > button {
+    grid-column: span 16;
+}
+
+#form {
+    display: none;
+}
+
+table {
+    text-align: center;
+}
+
+thead {
+    font-size: 20px;
+}
+
+td {
+    border: 2px solid black;
+    padding: .5rem;
+}

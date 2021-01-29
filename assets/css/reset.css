@@ -1,4 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+* {
+    outline: transparent;
+}
 
 html {
     line-height: 1.15;
@@ -112,13 +115,6 @@ button::-moz-focus-inner {
     padding: 0
 }
 
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
-    outline: 1px dotted ButtonText
-}
-
 fieldset {
     padding: .35em .75em .625em
 }
@@ -201,11 +197,6 @@ button {
     background-color: transparent;
     background-image: none;
     padding: 0
-}
-
-button:focus {
-    outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color
 }
 
 fieldset {
