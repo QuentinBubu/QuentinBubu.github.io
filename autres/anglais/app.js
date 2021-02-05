@@ -15,6 +15,23 @@ const values = {
     3: "Traduction",
 };
 
+const subject = [
+    ['Première pers. sing.', 'i'],
+    ['Seconde pers. sing.', 'you'],
+    ['Troisième pers. sing.', ['he', 'she', 'it']],
+    ['Première pers. plur.', 'we'],
+    ['Seconde pers. plur.', 'you'],
+    ['Troisième pers. plur.', 'they']
+];
+
+const auxi = {
+    'prétérit': 'did',
+    'present-perfect': [
+        'have', 'has'
+    ],
+    'past-perfect': 'had'
+}
+
 window.addEventListener("load", async function () {
     try {
         await (await fetch("./assets/irregular.json"))
@@ -45,6 +62,7 @@ startTest.addEventListener("click", function () {
     selection.style.display = "none";
 
     const liste = document.querySelectorAll(".choose:checked");
+    const sentences = document.querySelectorAll('.sentences:checked');
     let listOfVerbs = [];
 
     liste.forEach((element) => {
@@ -76,6 +94,18 @@ startTest.addEventListener("click", function () {
             } else {
                 td.setAttribute("contenteditable", true);
             }
+            lastTr.appendChild(td);
+        }
+
+        if (Array.isArray(sentences) && sentences.length) {
+            temps = []
+            sentences.forEach((element) => {
+                temps.push(element.getAttribute('value'));
+            });
+            temps = Math.floor(Math.floor() * Math.floor(temps.length))
+            let td = document.createElement("td");
+            td.setAttribute('data-temps', temps);
+            td.setAttribute('data-subject', )
             lastTr.appendChild(td);
         }
     });
