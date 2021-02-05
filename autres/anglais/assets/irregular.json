@@ -1,0 +1,335 @@
+{
+    "break": {
+        "Base verbale": "break",
+        "Prétérit": "broke",
+        "Participe passé": "broken",
+        "Traduction": "casser"
+    },
+    "build": {
+        "Base verbale": "build",
+        "Prétérit": "built",
+        "Participe passé": "built",
+        "Traduction": "construire"
+    },
+    "catch": {
+        "Base verbale": "catch",
+        "Prétérit": "caught",
+        "Participe passé": "caught",
+        "Traduction": "attraper"
+    },
+    "do": {
+        "Base verbale": "do",
+        "Prétérit": "did",
+        "Participe passé": "done",
+        "Traduction": "faire"
+    },
+    "fall": {
+        "Base verbale": "fall",
+        "Prétérit": "fell",
+        "Participe passé": "fallen",
+        "Traduction": "tomber"
+    },
+    "get": {
+        "Base verbale": "get",
+        "Prétérit": "got",
+        "Participe passé": "got",
+        "Traduction": "obtenir"
+    },
+    "hang": {
+        "Base verbale": "hang",
+        "Prétérit": "hung",
+        "Participe passé": "hung",
+        "Traduction": {
+            "1": "suspendre",
+            "2": "accrocher"
+        }
+    },
+    "lay": {
+        "Base verbale": "lay",
+        "Prétérit": "laid",
+        "Participe passé": "laid",
+        "Traduction": "poser"
+    },
+    "lead": {
+        "Base verbale": "lead",
+        "Prétérit": "led",
+        "Participe passé": "led",
+        "Traduction": "mener"
+    },
+    "lose": {
+        "Base verbale": "lose",
+        "Prétérit": "lost",
+        "Participe passé": "lost",
+        "Traduction": "perdre"
+    },
+    "make": {
+        "Base verbale": "make",
+        "Prétérit": "made",
+        "Participe passé": "made",
+        "Traduction": "fabriquer"
+    },
+    "mow": {
+        "Base verbale": "mow",
+        "Prétérit": "mowed",
+        "Participe passé": "mown",
+        "Traduction": "tondre"
+    },
+    "put": {
+        "Base verbale": "put",
+        "Prétérit": "put",
+        "Participe passé": "put",
+        "Traduction": "mettre"
+    },
+    "set": {
+        "Base verbale": "set",
+        "Prétérit": "set",
+        "Participe passé": "set",
+        "Traduction": {
+            "1": "placer",
+            "2": "poser"
+        }
+    },
+    "shake": {
+        "Base verbale": "shake",
+        "Prétérit": "shook",
+        "Participe passé": "shaken",
+        "Traduction": "secouer"
+    },
+    "spread": {
+        "Base verbale": "spread",
+        "Prétérit": "spread",
+        "Participe passé": "spread",
+        "Traduction": {
+            "1": "répendre",
+            "2": "étaler"
+        }
+    },
+    "spin": {
+        "Base verbale": "spin",
+        "Prétérit": "span",
+        "Participe passé": "spun",
+        "Traduction": "faire tourner"
+    },
+    "spring": {
+        "Base verbale": "spring",
+        "Prétérit": "sprang",
+        "Participe passé": "sprung",
+        "Traduction": "sauter"
+    },
+    "throw": {
+        "Base verbale": "throw",
+        "Prétérit": "threw",
+        "Participe passé": "thrown",
+        "Traduction": "lancer"
+    },
+    "win": {
+        "Base verbale": "win",
+        "Prétérit": "won",
+        "Participe passé": "won",
+        "Traduction": "gagner"
+    },
+    "beat": {
+        "Base verbale": "beat",
+        "Prétérit": "beat",
+        "Participe passé": "beatten",
+        "Traduction": "battre"
+    },
+    "bite": {
+        "Base verbale": "bite",
+        "Prétérit": "bit",
+        "Participe passé": "bitten",
+        "Traduction": "mordre"
+    },
+    "bleed": {
+        "Base verbale": "bleed",
+        "Prétérit": "bled",
+        "Participe passé": "bled",
+        "Traduction": "saigner"
+    },
+    "burst": {
+        "Base verbale": "burst",
+        "Prétérit": "burst",
+        "Participe passé": "burst",
+        "Traduction": "éclater"
+    },
+    "forbid": {
+        "Base verbale": "forbid",
+        "Prétérit": "forbade",
+        "Participe passé": "forbidden",
+        "Traduction": "interdire"
+    },
+    "hit": {
+        "Base verbale": "hit",
+        "Prétérit": "hit",
+        "Participe passé": "hit",
+        "Traduction": "frapper"
+    },
+    "hurt": {
+        "Base verbale": "hurt",
+        "Prétérit": "hurt",
+        "Participe passé": "hurt",
+        "Traduction": "blesser"
+    },
+    "shoot": {
+        "Base verbale": "shoot",
+        "Prétérit": "shot",
+        "Participe passé": "shot",
+        "Traduction": "tirer"
+    },
+    "spit": {
+        "Base verbale": "spit",
+        "Prétérit": "spat",
+        "Participe passé": "spat",
+        "Traduction": "cracher"
+    },
+    "steal": {
+        "Base verbale": "steal",
+        "Prétérit": "stole",
+        "Participe passé": "stolen",
+        "Traduction": {
+            "1": "voler",
+            "2": "dérober"
+        }
+    },
+    "strike": {
+        "Base verbale": "strike",
+        "Prétérit": "strucke",
+        "Participe passé": "struck",
+        "Traduction": "frapper"
+    },
+    "tear": {
+        "Base verbale": "tear",
+        "Prétérit": "tore",
+        "Participe passé": "torn",
+        "Traduction": "déchirer"
+    },
+    "undergo": {
+        "Base verbale": "undergo",
+        "Prétérit": "underwent",
+        "Participe passé": "undergone",
+        "Traduction": "subir"
+    },
+    "upset": {
+        "Base verbale": "upset",
+        "Prétérit": "upset",
+        "Participe passé": "upset",
+        "Traduction": {
+            "1": "bouleverser",
+            "2": "révolter"
+        }
+    },
+    "weep": {
+        "Base verbale": "weep",
+        "Prétérit": "wept",
+        "Participe passé": "wept",
+        "Traduction": "pleurer"
+    },
+    "bet": {
+        "Base verbale": "bet",
+        "Prétérit": "bet",
+        "Participe passé": "bet",
+        "Traduction": "parier"
+    },
+    "bid": {
+        "Base verbale": "bid",
+        "Prétérit": "bade / bid",
+        "Participe passé": "bidden / bid",
+        "Traduction": {
+            "1": "ordonner",
+            "2": "commender"
+        }
+    },
+    "forgive": {
+        "Base verbale": "forgive",
+        "Prétérit": "forgave",
+        "Participe passé": "forgiven",
+        "Traduction": "pardonner"
+    },
+    "give": {
+        "Base verbale": "give",
+        "Prétérit": "gave",
+        "Participe passé": "given",
+        "Traduction": "donner"
+    },
+    "have": {
+        "Base verbale": "have",
+        "Prétérit": "had",
+        "Participe passé": "had",
+        "Traduction": "avoir"
+    },
+    "keep": {
+        "Base verbale": "keep",
+        "Prétérit": "kept",
+        "Participe passé": "kept",
+        "Traduction": "garder"
+    },
+    "lend": {
+        "Base verbale": "lend",
+        "Prétérit": "lent",
+        "Participe passé": "lent",
+        "Traduction": "prêter"
+    },
+    "meet": {
+        "Base verbale": "meet",
+        "Prétérit": "met",
+        "Participe passé": "met",
+        "Traduction": "rencontrer"
+    },
+    "say": {
+        "Base verbale": "say",
+        "Prétérit": "said",
+        "Participe passé": "said",
+        "Traduction": "dire"
+    },
+    "send": {
+        "Base verbale": "send",
+        "Prétérit": "sent",
+        "Participe passé": "sent",
+        "Traduction": "envoyer"
+    },
+    "show": {
+        "Base verbale": "show",
+        "Prétérit": "showed",
+        "Participe passé": "shown",
+        "Traduction": "montrer"
+    },
+    "speak": {
+        "Base verbale": "speak",
+        "Prétérit": "spoke",
+        "Participe passé": "spoken",
+        "Traduction": "parler"
+    },
+    "spell": {
+        "Base verbale": "spell",
+        "Prétérit": "spelt",
+        "Participe passé": "spelt",
+        "Traduction": "épeler"
+    },
+    "swear": {
+        "Base verbale": "swear",
+        "Prétérit": "swore",
+        "Participe passé": "sworn",
+        "Traduction": {
+            "1": "jurer",
+            "2": "promettre"
+        }
+    },
+    "take": {
+        "Base verbale": "take",
+        "Prétérit": "took",
+        "Participe passé": "taken",
+        "Traduction": "prendre"
+    },
+    "tell": {
+        "Base verbale": "tell",
+        "Prétérit": "told",
+        "Participe passé": "told",
+        "Traduction": "raconter"
+    },
+    "write": {
+        "Base verbale": "write",
+        "Prétérit": "wrote",
+        "Participe passé": "written",
+        "Traduction": "écrire"
+    }
+}
