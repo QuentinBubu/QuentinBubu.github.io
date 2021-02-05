@@ -33,16 +33,12 @@ input {
     margin: .5rem;
 }
 
-
-
 #selection {
     display: grid;
     grid-template-columns: repeat(8, .5fr 2fr);
 }
 
-#selection > button,
-#selection > hr,
-#selection > section {
+#selection > button {
     grid-column: span 16;
 }
 
