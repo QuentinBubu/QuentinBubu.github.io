@@ -2,21 +2,19 @@ let form = document.querySelector("#form");
 let selection = document.querySelector("#selection");
 let tbody = document.querySelector("#tbody");
 let score = document.querySelector("#score");
+let data;
 const save = document.querySelector("#save");
 const load = document.querySelector("#load");
 const selectInput = document.querySelector("#selectInput");
 const startTest = document.querySelector("#startTest");
 const returnButton = document.querySelector("#return");
 const verify = document.querySelector("#verify");
-let data;
-
 const values = {
     0: "Base verbale",
     1: "Prétérit",
     2: "Participe passé",
     3: "Traduction",
 };
-
 const subject = [
     ["Première pers. sing.", "I"],
     ["Seconde pers. sing.", "You"],
@@ -25,7 +23,6 @@ const subject = [
     ["Seconde pers. plur.", "You"],
     ["Troisième pers. plur.", "They"],
 ];
-
 const mode = ["affirmative", "négative", "interrogative"];
 
 save.addEventListener("click", function () {
@@ -56,6 +53,7 @@ load.addEventListener("change", () => {
         element = element.split("|");
         element.forEach((element) => {
             element.split("/").forEach((element) => {
+                element = element.replace(' ', '-');
                 let input = document.querySelector(`#${element}`);
                 input.setAttribute("checked", true);
             });
@@ -72,7 +70,7 @@ window.addEventListener("load", async function () {
                 data = donnees;
                 for (const key of Object.entries(data)) {
                     let label = document.createElement("label");
-                    label.setAttribute("for", key[0]);
+                    label.setAttribute("for", key[0].replace(' ', '-'));
                     label.innerHTML = key[0];
                     selection.appendChild(label);
 
@@ -80,7 +78,7 @@ window.addEventListener("load", async function () {
                     input.setAttribute("type", "checkbox");
                     input.setAttribute("class", "choose");
                     input.setAttribute("value", key[0]);
-                    input.setAttribute("id", key[0]);
+                    input.setAttribute("id", key[0].replace(' ', '-'));
                     selection.appendChild(input);
                 }
             });
