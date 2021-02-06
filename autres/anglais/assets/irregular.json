@@ -331,5 +331,452 @@
         "Prétérit": "wrote",
         "Participe passé": "written",
         "Traduction": "écrire"
+    },
+    "bend": {
+        "Base verbale": "bend",
+        "Prétérit": "bent",
+        "Participe passé": "bent",
+        "Traduction": {
+            "1": "plier",
+            "2": "courber"
+        }
+    },
+    "come": {
+        "Base verbale": "come",
+        "Prétérit": "came",
+        "Participe passé": "come",
+        "Traduction": "venir"
+    },
+    "drive": {
+        "Base verbale": "drive",
+        "Prétérit": "drove",
+        "Participe passé": "driven",
+        "Traduction": "conduire"
+    },
+    "fly": {
+        "Base verbale": "fly",
+        "Prétérit": "flew",
+        "Participe passé": "flown",
+        "Traduction": "voler"
+    },
+    "go": {
+        "Base verbale": "go",
+        "Prétérit": "went",
+        "Participe passé": "gone",
+        "Traduction": "aller"
+    },
+    "kneel": {
+        "Base verbale": "kneel",
+        "Prétérit": "knelt",
+        "Participe passé": "knelt",
+        "Traduction": "s'agenouiller"
+    },
+    "lean": {
+        "Base verbale": "lean",
+        "Prétérit": "leant",
+        "Participe passé": "leant",
+        "Traduction": "pencher"
+    },
+    "leave": {
+        "Base verbale": "leave",
+        "Prétérit": "left",
+        "Participe passé": "left",
+        "Traduction": "partir"
+    },
+    "ride": {
+        "Base verbale": "ride",
+        "Prétérit": "rode",
+        "Participe passé": "ridden",
+        "Traduction": {
+            "1": "faire du cheval",
+            "2": "faire du vélo"
+        }
+    },
+    "rise": {
+        "Base verbale": "rise",
+        "Prétérit": "rose",
+        "Participe passé": "risen",
+        "Traduction": "s'élever"
+    },
+    "run": {
+        "Base verbale": "run",
+        "Prétérit": "ran",
+        "Participe passé": "run",
+        "Traduction": "courir"
+    },
+    "sit": {
+        "Base verbale": "sit",
+        "Prétérit": "sat",
+        "Participe passé": "sat",
+        "Traduction": "s'asseoire"
+    },
+    "speed": {
+        "Base verbale": "speed",
+        "Prétérit": "sped",
+        "Participe passé": "sped",
+        "Traduction": "courir"
+    },
+    "stride": {
+        "Base verbale": "stride",
+        "Prétérit": "strode",
+        "Participe passé": "stridden",
+        "Traduction": "marcher à grands pas"
+    },
+    "swing": {
+        "Base verbale": "swing",
+        "Prétérit": "swung",
+        "Participe passé": "swung",
+        "Traduction": "se balancer"
+    },
+    "swim": {
+        "Base verbale": "swim",
+        "Prétérit": "swam",
+        "Participe passé": "swum",
+        "Traduction": "nager"
+    },
+    "awake": {
+        "Base verbale": "awake",
+        "Prétérit": "awoke",
+        "Participe passé": "awoken",
+        "Traduction": "se réveiller"
+    },
+    "bear": {
+        "Base verbale": "bear",
+        "Prétérit": "bore",
+        "Participe passé": "borne",
+        "Traduction": "supporter"
+    },
+    "become": {
+        "Base verbale": "become",
+        "Prétérit": "became",
+        "Participe passé": "become",
+        "Traduction": "devenir"
+    },
+    "blow": {
+        "Base verbale": "blow",
+        "Prétérit": "blew",
+        "Participe passé": "blown",
+        "Traduction": "souffler"
+    },
+    "breed": {
+        "Base verbale": "breed",
+        "Prétérit": "bred",
+        "Participe passé": "bred",
+        "Traduction": "élever"
+    },
+    "choose": {
+        "Base verbale": "choose",
+        "Prétérit": "chose",
+        "Participe passé": "chosen",
+        "Traduction": "choisir"
+    },
+    "dream": {
+        "Base verbale": "dream",
+        "Prétérit": "dreamt",
+        "Participe passé": "dreamt",
+        "Traduction": "rêver"
+    },
+    "feel": {
+        "Base verbale": "feel",
+        "Prétérit": "felt",
+        "Participe passé": "felt",
+        "Traduction": {
+            "1": "sentir",
+            "2": "ressentir"
+        }
+    },
+    "forsee": {
+        "Base verbale": "forsee",
+        "Prétérit": "forsaw",
+        "Participe passé": "forseen",
+        "Traduction": "prévoir"
+    },
+    "grow up": {
+        "Base verbale": "grow up",
+        "Prétérit": "grew up",
+        "Participe passé": "grown up",
+        "Traduction": "grandir"
+    },
+    "hear": {
+        "Base verbale": "hear",
+        "Prétérit": "heart",
+        "Participe passé": "heart",
+        "Traduction": "entendre"
+    },
+    "hide": {
+        "Base verbale": "hide",
+        "Prétérit": "hid",
+        "Participe passé": "hidden",
+        "Traduction": "cacher"
+    },
+    "lie": {
+        "Base verbale": "lie",
+        "Prétérit": "lay",
+        "Participe passé": "lain",
+        "Traduction": "être allongé"
+    },
+    "light": {
+        "Base verbale": "light",
+        "Prétérit": "lit",
+        "Participe passé": "lit",
+        "Traduction": "allumer"
+    },
+    "see": {
+        "Base verbale": "see",
+        "Prétérit": "saw",
+        "Participe passé": "seen",
+        "Traduction": "voir"
+    },
+    "seek": {
+        "Base verbale": "seek",
+        "Prétérit": "sought",
+        "Participe passé": "sought",
+        "Traduction": "chercher"
+    },
+    "shine": {
+        "Base verbale": "shine",
+        "Prétérit": "shone",
+        "Participe passé": "shone",
+        "Traduction": "brillier"
+    },
+    "sleep": {
+        "Base verbale": "sleep",
+        "Prétérit": "slept",
+        "Participe passé": "slept",
+        "Traduction": "dormir"
+    },
+    "spend": {
+        "Base verbale": "spend",
+        "Prétérit": "spent",
+        "Participe passé": "spend",
+        "Traduction": {
+            "1": "dépenser",
+            "2": "passer du temps"
+        }
+    },
+    "wake up": {
+        "Base verbale": "wake up",
+        "Prétérit": "woke up",
+        "Participe passé": "woken up",
+        "Traduction": "se réveiller"
+    },
+    "wear": {
+        "Base verbale": "wear",
+        "Prétérit": "wore",
+        "Participe passé": "worn",
+        "Traduction": "porter"
+    },
+    "withdraw": {
+        "Base verbale": "withdraw",
+        "Prétérit": "withdrew",
+        "Participe passé": "withdrawn",
+        "Traduction": "retirer"
+    },
+    "buy": {
+        "Base verbale": "buy",
+        "Prétérit": "bought",
+        "Participe passé": "bought",
+        "Traduction": "acheter"
+    },
+    "burn": {
+        "Base verbale": "burn",
+        "Prétérit": "burnt",
+        "Participe passé": "burnt",
+        "Traduction": "bruler"
+    },
+    "cost": {
+        "Base verbale": "cost",
+        "Prétérit": "cost",
+        "Participe passé": "cost",
+        "Traduction": "couter"
+    },
+    "drink": {
+        "Base verbale": "drink",
+        "Prétérit": "drank",
+        "Participe passé": "drunk",
+        "Traduction": "boire"
+    },
+    "eat": {
+        "Base verbale": "eat",
+        "Prétérit": "ate",
+        "Participe passé": "eaten",
+        "Traduction": "manger"
+    },
+    "feed": {
+        "Base verbale": "feed",
+        "Prétérit": "fed",
+        "Participe passé": "fed",
+        "Traduction": "nourrir"
+    },
+    "freeze": {
+        "Base verbale": "freeze",
+        "Prétérit": "froze",
+        "Participe passé": "frozen",
+        "Traduction": {
+            "1": "congeler",
+            "2": "geler"
+        }
+    },
+    "grow": {
+        "Base verbale": "grow",
+        "Prétérit": "grew",
+        "Participe passé": "grown",
+        "Traduction": {
+            "1": "faire pousser",
+            "2": "grandir"
+        }
+    },
+    "pay": {
+        "Base verbale": "pay",
+        "Prétérit": "paid",
+        "Participe passé": "paid",
+        "Traduction": "payer"
+    },
+    "sell": {
+        "Base verbale": "sell",
+        "Prétérit": "sold",
+        "Participe passé": "sold",
+        "Traduction": "vendre"
+    },
+    "shed": {
+        "Base verbale": "shed",
+        "Prétérit": "shed",
+        "Participe passé": "shed",
+        "Traduction": "verser des larmes"
+    },
+    "smell": {
+        "Base verbale": "smell",
+        "Prétérit": "smelt",
+        "Participe passé": "smelt",
+        "Traduction": "sentir"
+    },
+    "spill": {
+        "Base verbale": "spill",
+        "Prétérit": "spilt",
+        "Participe passé": "spilt",
+        "Traduction": "renverser"
+    },
+    "spoil": {
+        "Base verbale": "spoil",
+        "Prétérit": "spoilt / spoiled",
+        "Participe passé": "spoilt / spoiled",
+        "Traduction": "gacher"
+    },
+    "begin": {
+        "Base verbale": "begin",
+        "Prétérit": "began",
+        "Participe passé": "begun",
+        "Traduction": "commencer"
+    },
+    "bring": {
+        "Base verbale": "bring",
+        "Prétérit": "brought",
+        "Participe passé": "brought",
+        "Traduction": "apporter"
+    },
+    "cut": {
+        "Base verbale": "cut",
+        "Prétérit": "cut",
+        "Participe passé": "cut",
+        "Traduction": "couper"
+    },
+    "deal": {
+        "Base verbale": "deal",
+        "Prétérit": "dealt",
+        "Participe passé": "dealt",
+        "Traduction": {
+            "1": "distribuer",
+            "2": "traiter"
+        }
+    },
+    "draw": {
+        "Base verbale": "draw",
+        "Prétérit": "drew",
+        "Participe passé": "drawn",
+        "Traduction": "dessiner"
+    },
+    "forget": {
+        "Base verbale": "forget",
+        "Prétérit": "forgot",
+        "Participe passé": "forgotten",
+        "Traduction": "oublier"
+    },
+    "find": {
+        "Base verbale": "find",
+        "Prétérit": "found",
+        "Participe passé": "found",
+        "Traduction": "trouver"
+    },
+    "know": {
+        "Base verbale": "kwnow",
+        "Prétérit": "knew",
+        "Participe passé": "known",
+        "Traduction": "savoir"
+    },
+    "learn": {
+        "Base verbale": "learn",
+        "Prétérit": "learnt / learned",
+        "Participe passé": "learnt / learned",
+        "Traduction": "apprendre"
+    },
+    "mean": {
+        "Base verbale": "mean",
+        "Prétérit": "meant",
+        "Participe passé": "meant",
+        "Traduction": {
+            "1": "signifier",
+            "2": "vouloir dire"
+        }
+    },
+    "read": {
+        "Base verbale": "read",
+        "Prétérit": "read",
+        "Participe passé": "read",
+        "Traduction": "lire"
+    },
+    "ring": {
+        "Base verbale": "ring",
+        "Prétérit": "rang",
+        "Participe passé": "rung",
+        "Traduction": "sonner"
+    },
+    "stand": {
+        "Base verbale": "stand",
+        "Prétérit": "stood",
+        "Participe passé": "stood",
+        "Traduction": "etre debout"
+    },
+    "stick": {
+        "Base verbale": "stick",
+        "Prétérit": "stuck",
+        "Participe passé": "stuck",
+        "Traduction": "coller"
+    },
+    "sing": {
+        "Base verbale": "sing",
+        "Prétérit": "sang",
+        "Participe passé": "sung",
+        "Traduction": "chanter"
+    },
+    "teauch": {
+        "Base verbale": "tauch",
+        "Prétérit": "taught",
+        "Participe passé": "taught",
+        "Traduction": {
+            "1": "apprendre",
+            "2": "enseigner"
+        }
+    },
+    "think": {
+        "Base verbale": "think",
+        "Prétérit": "thought",
+        "Participe passé": "thought",
+        "Traduction": "penser"
+    },
+    "understand": {
+        "Base verbale": "understand",
+        "Prétérit": "understood",
+        "Participe passé": "understood",
+        "Traduction": "comprendre"
     }
 }
