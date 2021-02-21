@@ -1,0 +1,266 @@
+/*
+ * general
+ */
+
+:root {
+    font-size: 20px;
+    background-color: antiquewhite;
+    scroll-behavior: smooth;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+    --blue1: #9fdef1;
+    --white1: #d2f5f7;
+}
+
+main {
+    margin-left: .5rem;
+}
+
+main > * {
+    margin: 5vh 0;
+    max-width: 75%;
+    border-radius: 75px;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+section {
+    margin-right: .5rem;
+    margin-left: .5rem;
+
+}
+
+h3 {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+h6 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+main > *:nth-child(2n+1) {
+    background-color: var(--blue1);
+}
+
+main > *:nth-child(2n) {
+    background-color: var(--white1);
+    align-self: flex-start;
+    width: 30%;
+}
+
+#infos span,
+#services span {
+    font-size: 1.5rem;
+    vertical-align: -webkit-baseline-middle;
+    margin-right: .5rem;
+}
+
+
+/*
+ * header
+ */
+
+header {
+    background-color: rgb(55, 225, 255);
+}
+
+header img {
+    display: inline;
+}
+
+header > div > h1 > a {
+    vertical-align: sub;
+}
+
+header > div:first-child {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > div > p {
+    align-self: flex-end;
+}
+
+/*
+ * nav menu
+ */
+
+header > div:last-child > nav {
+    background-color: #00bfba;
+    padding: .2rem;
+}
+
+header > div:last-child > nav > label,
+header > div:last-child > nav > input {
+    display: none;
+}
+
+header > div:last-child > nav > ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header > div:last-child > nav > ul > li > *:not(a) {
+    display: none;
+}
+
+header > div:last-child > nav > ul > li > a:hover ~ input ~ ul,
+header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
+    display: block;
+    position: absolute;
+    background-color: #00bfba;
+    margin-top: -3px;
+    margin-left: 5px;
+    padding: .3rem;
+}
+
+/*
+ * banner
+ */
+
+#home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#home img {
+    height: 8rem;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+#home > div > *:not(h6) {
+    margin-right: .5rem;
+}
+
+/*
+ * informations section
+ */
+
+#infos > div > div > div {
+    display: flex;
+}
+
+/*
+ * services section
+ */
+
+#services p {
+    flex: 1 1 100%;
+}
+
+#services > div > div > div {
+    margin: 3vh 0;
+}
+
+#services > div > div > div > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+ * about section
+ */
+
+#about > div > div > div {
+    display: flex;
+    align-items: center;
+    column-gap: 3%;
+}
+
+#about > div > div > div > span {
+    width: 20px;
+}
+
+/*
+ * form section
+ */
+
+#appointment > div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#appointment > div > div {
+    flex: 1;
+}
+
+#appointment > div > div:first-child > form {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+}
+
+#appointment form input,
+#appointment form button {
+    width: 75%;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+#appointment form input:valid {
+    border: 2px solid green;
+}
+
+#appointment form input:invalid {
+    border: 2px solid red;
+}
+
+#appointment form input:focus {
+    outline: orange solid 2px;
+    border: none;
+}
+
+#appointment form button {
+    border: 2px solid red;
+    color: red;
+}
+
+#appointment form > input:valid ~ input:valid ~ input:valid ~ input:valid ~ input:valid  ~ button {
+    border: 2px solid green;
+    color: green;
+}
+
+/*
+ * application section
+ */
+
+#application {
+    width: 50%;
+}
+
+#application > div > div:first-child > img {
+    height: 50vh;
+}
+
+#application > div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#application > div > div:last-child {
+    display: grid;
+}
+
+#application > div > div:last-child > p:first-child {
+    order: 1;
+}

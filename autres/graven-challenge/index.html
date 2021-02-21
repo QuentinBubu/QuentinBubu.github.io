@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Gravizen :: Consultation à distance par des pros</title>
+        <!-- Meta tag Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+
+        <!-- Custom-Files -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <link
+            rel="shortcut icon"
+            href="./images/logo.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/app.js" defer></script>
+    </head>
+
+    <body>
+        <!-- haut de page -->
+        <header>
+            <div>
+                <!-- numero de telephone -->
+                <p>
+                    <span class="fa fa-volume-control-phone"></span>+331 20 20
+                    20 20
+                </p>
+
+                <!-- logo -->
+                <h1>
+                    <a href="index.html"
+                        >Gravizen<img src="images/logo.png" alt=" "
+                    /></a>
+                </h1>
+            </div>
+            <!-- menu de navigation -->
+            <div>
+                <nav>
+                    <label for="drop">Menu</label>
+                    <input type="checkbox" id="drop" />
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#about">A Propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li>
+                            <!-- Menu deroulant -->
+                            <label for="drop-2">
+                                Application
+                                <span
+                                    class="fa fa-angle-down"
+                                    aria-hidden="true"
+                                ></span>
+                            </label>
+                            <a href="#"
+                                >Application<span
+                                    class="fa fa-angle-down"
+                                    aria-hidden="true"
+                                ></span
+                            ></a>
+                            <input type="checkbox" id="drop-2" />
+                            <ul>
+                                <li>
+                                    <a href="#application"
+                                        >Télécharger l'appli</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#appointment">Réserver en ligne</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#doctors">Equipe</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- //menu de navigation -->
+        </header>
+        <!-- haut de page -->
+        <main>
+            <!-- bannière principale -->
+            <div id="home">
+                <!-- bannière d'accueil -->
+                <div>
+                    <img src="images/banner.png" alt="" />
+                </div>
+                <div>
+                    <h3>Bienvenue sur Gravizen</h3>
+                    <h6>Des professionnels de la santé à votre service</h6>
+                    <p>
+                        La consultation à distance n'a jamais été aussi simple
+                    </p>
+                    <a href="#appointment">Prendre rendez-vous</a>
+                </div>
+                <!-- //bannière d'accueil -->
+            </div>
+            <!-- //bannière principale -->
+
+            <!-- Informations -->
+            <section id="infos">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div>
+                                <h3>Appelez-nous</h3>
+                                <p>+331 20 20 20 20</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <span class="fa fa-clock-o"></span>
+                            </div>
+                            <div>
+                                <h3>Horaires</h3>
+                                <p>Lundi-Vendredi : 8h-22h</p>
+                                <p>Week-end : 7h-23h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <span class="fa fa-pencil-square-o"></span>
+                            </div>
+                            <div>
+                                <h3>Rendez-vous</h3>
+                                <p>Prendre rendez-vous en ligne</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //Informations -->
+
+            <!-- Soins -->
+            <div id="services">
+                <div>
+                    <div>
+                        <h3>Que proposons nous ?</h3>
+                        <h6>Nos soins</h6>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <span class="fa fa-stethoscope"></span>
+                                <h4>Généraliste</h4>
+                                <p>
+                                    Une simple révision, un besoin immédiat sur
+                                    une demande non specifique
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="fa fa-user-md"></span>
+                                <h4>Dermatologie</h4>
+                                <p>
+                                    Etude de la peau, des cheveux, des poils et
+                                    des ongles ainsi qu'à la prévention, au
+                                    diagnostic et au traitement des maladies qui
+                                    les touchent.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="fa fa-wheelchair"></span>
+                                <h4>Cardialogie</h4>
+                                <p>
+                                    Malformations congénitales, troubles du
+                                    rythme et de la conduction, pathologies des
+                                    valves, insuffisance cardiaque,
+                                    cardiomyopathies
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="fa fa-plus-square"></span>
+                                <h4>Urgence Covid</h4>
+                                <p>
+                                    Cas contact, test PCR, prise de sang,
+                                    consultation urgente
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Soins -->
+
+            <!-- A Propos -->
+            <section id="about">
+                <div>
+                    <h3>A <span> propos</span></h3>
+                    <div>
+                        <p>
+                            Depuis plus de 3 ans, notre application propose
+                            differents services en temp reel pour suivre les
+                            pathologies de nos patients. Dans un cadre
+                            professionnel et humain
+                        </p>
+                        <p>
+                            Une simple consultation à distance, une question, un
+                            soin spécifique, nous sommes la pour répondre à vos
+                            besoins
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <span class="fa fa-h-square"></span>
+                            <h4>Humain</h4>
+                        </div>
+                        <div>
+                            <span class="fa fa-ambulance"></span>
+                            <h4>Rapide</h4>
+                        </div>
+                        <div>
+                            <span class="fa fa-medkit"></span>
+                            <h4>Précis</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //A Propos -->
+
+            <!-- Formulaire rendez-vous -->
+            <section id="appointment">
+                <div>
+                    <div>
+                        <h3>Prendre un rendez-vous</h3>
+                        <form action="#" method="post">
+                            <input
+                                placeholder="Nom de famille"
+                                name="name"
+                                type="text"
+                                required=""
+                            />
+                            <input
+                                placeholder="Adresse email"
+                                name="email"
+                                type="email"
+                                required=""
+                            />
+                            <input
+                                placeholder="Numéro de contact"
+                                name="number"
+                                type="text"
+                                required=""
+                            />
+                            <input name="date" type="date" required="" />
+                            <input
+                                placeholder="Entrer l'horaire souhaité"
+                                name="time"
+                                type="text"
+                                required=""
+                            />
+                            <button>Soumettre</button>
+                        </form>
+                    </div>
+                    <div>
+                        <img src="images/app1.png" alt="" />
+                    </div>
+                </div>
+            </section>
+            <!-- //Formulaire rendez-vous  -->
+
+            <!-- Télécharger l'application -->
+            <section id="application">
+                <div>
+                    <div>
+                        <img src="images/mid.png" alt="" />
+                    </div>
+                    <div>
+                        <p>Playstore - Applestore</p>
+                        <h3>Télécharger l'application mobile</h3>
+                        <p>
+                            Consultation par visio, suivi de pathologie, prise
+                            de rendez-vous et prise en charge urgente en une
+                            seule application
+                        </p>
+                        <a href="#playstore">Playstore</a>
+                        <a href="#applestore">Apple store</a>
+                    </div>
+                </div>
+            </section>
+            <!-- //Télécharger l'application -->
+
+            <!-- Médecins -->
+            <section id="doctors">
+                <div>
+                    <div>
+                        <h3>Nos specialistes</h3>
+                        <h6>Professionnels</h6>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/t3.png" alt="" />
+                            <div>
+                                <h4>Teva bristner</h4>
+                                <h6>Généraliste</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/t1.png" alt="" />
+                            <div>
+                                <h4>Elisa dupont</h4>
+                                <h6>Cardiologue</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/t2.png" alt="" />
+                            <div>
+                                <h4>Rinto dabesa</h4>
+                                <h6>Dermatologue</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Médecins -->
+
+            <!-- Articles de blog -->
+            <section id="news">
+                <div>
+                    <h3>Nouveautés</h3>
+                    <h6>Blog Post</h6>
+                </div>
+                <div>
+                    <!-- article 1 -->
+                    <div>
+                        <div>
+                            <a href="#">
+                                <img src="images/blog2.jpg" alt="image" />
+                            </a>
+                        </div>
+                        <div>
+                            <span>Février 20, 2021 - blog</span>
+                            <a href="#">TEST COVID A DOMICILE</a>
+                            <p>
+                                Découvez comment éviter les files d'attentes
+                                avec le test PCR à domicile
+                            </p>
+                        </div>
+                    </div>
+                    <!-- article 2 -->
+                    <div>
+                        <div>
+                            <a href="#">
+                                <img src="images/blog1.jpg" alt="image" />
+                            </a>
+                        </div>
+                        <div>
+                            <span>Février 20, 2021 - blog</span>
+                            <a href="#">L'APPLICATION VERSION 2.0</a>
+                            <p>
+                                Découvrez les nouveautés de la nouvelle
+                                interface de l'appli
+                            </p>
+                        </div>
+                    </div>
+                    <!-- article 3 -->
+                    <div>
+                        <div>
+                            <a href="#">
+                                <img src="images/blog3.png" alt="image" />
+                            </a>
+                        </div>
+                        <div>
+                            <span>Février 20, 2021 - blog</span>
+                            <a href="#">SUIVI INTELLIGENT</a>
+                            <p>
+                                Des statistiques avancées sur comment nous
+                                rendons la prise de rendez-vous facile pour tous
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //Articles -->
+
+            <!-- Contact -->
+            <section id="contact">
+                <div>
+                    <h6>Une question ? un conseil ?</h6>
+                    <h3>Contactez-nous</h3>
+                </div>
+                <form action="#" method="post">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Entrer votre nom..."
+                        required=""
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Entrer votre email..."
+                        required=""
+                    />
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Entrer Le Sujet..."
+                        required=""
+                    />
+                    <input
+                        type="text"
+                        name="number"
+                        placeholder="Entrer votre numero de téléphone"
+                        required=""
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Entrer votre message"
+                    ></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+            <!-- //Contact -->
+
+            <!-- Chiffres et témoignages -->
+            <section id="facts">
+                <!-- chiffres -->
+                <div>
+                    <h3>Gravizen en quelques chiffres</h3>
+                    <div>
+                        <div>
+                            <h3>28K+</h3>
+                            <p>Consultations</p>
+                        </div>
+                        <div>
+                            <h3>927</h3>
+                            <p>Avis</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- témoignage -->
+                <div>
+                    <p>
+                        <span class="fa fa-quote-left"></span>
+                        J'ai téléchargé l'application en 5 minutes et j'ai une
+                        consultation dans la journée
+                    </p>
+                    <div>
+                        <div>
+                            <img src="images/te1.jpg" alt=" " />
+                        </div>
+                        <div>
+                            <h5>Valerie Dozo</h5>
+                            <p>Patiente</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //chiffres -->
+        </main>
+        <!-- pied de page -->
+        <footer>
+            <div>
+                <h2>
+                    <a href="index.html">
+                        Gravizen
+                        <img src="images/logo.png" alt=" " />
+                    </a>
+                </h2>
+                <p>
+                    <a href="mailto:contact@gravizen.com"
+                        >contact@gravizen.com</a
+                    >
+                </p>
+                <p>+331 20 20 20 20</p>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul>
+                    <li>
+                        <a href="index.html"> Accueil </a>
+                    </li>
+                    <li>
+                        <a href="#services"> Nos soins </a>
+                    </li>
+                    <li>
+                        <a href="#news"> Blog </a>
+                    </li>
+                    <li>
+                        <a href="#contact"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Médecins</h3>
+                <ul>
+                    <li>
+                        <a href="#doctors"> Dr. Teva britsner </a>
+                    </li>
+                    <li>
+                        <a href="#doctors"> Dr. Elisa dupont </a>
+                    </li>
+                    <li>
+                        <a href="#doctors"> Dr. Rinto dabesa </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- //Pied de page -->
+
+        <!-- Copyright -->
+        <p>© 2021 Gravizen. Tout droit réservés | Par Pseudo</p>
+
+        <a href="#home">
+            <span aria-hidden="true"></span>
+        </a>
+    </body>
+</html>
