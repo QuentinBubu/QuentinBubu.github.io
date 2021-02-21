@@ -17,6 +17,7 @@ main {
 }
 
 main > * {
+    visibility: hidden;
     margin: 5vh 0;
     max-width: 75%;
     border-radius: 75px;
