@@ -333,3 +333,20 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
     align-self: flex-end;
     margin-top: auto;
 }
+
+/*
+ * contact
+ */
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+#contact input,
+#contact textarea {
+    font-size: 1.2rem;
+}
