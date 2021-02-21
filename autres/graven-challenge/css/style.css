@@ -264,3 +264,12 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 #application > div > div:last-child > p:first-child {
     order: 1;
 }
+
+#application > div > div:last-child > div {
+    display: flex;
+    column-gap: 1rem;
+}
+
+#application > div > div:last-child img {
+    height: 2rem;
+}

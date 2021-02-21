@@ -5,3 +5,4 @@
 * Exit `header` to `main` tag
 * Put navigation bar in `header`
 * Change `h3` to `h6` and invert for banner
+* Add playstore and apple store picture
