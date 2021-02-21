@@ -273,3 +273,27 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 #application > div > div:last-child img {
     height: 2rem;
 }
+
+/*
+ * doctors section
+ */
+
+#doctors > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#doctors img {
+    height: 70vh;
+}
+
+#doctors > div > div:last-child {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 3rem;
+}
+
+#doctors > div > div:last-child > div > div {
+    display: flex;
+    flex-direction: column-reverse;
+}
