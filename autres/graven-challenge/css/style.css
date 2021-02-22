@@ -277,7 +277,7 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 }
 
 #appointment form > input:valid ~ input:valid ~ input:valid ~ input:valid ~ input:valid  ~ button {
-    border: 2px solid green;
+    border-bottom: 2px solid green;
     color: green;
 }
 
