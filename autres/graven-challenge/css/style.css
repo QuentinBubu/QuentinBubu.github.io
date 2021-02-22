@@ -324,9 +324,13 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
  * doctors section
  */
 
-#doctors h4 {
+ #doctors h4 {
     font-weight: 900;
     text-decoration: underline;
+}
+
+#doctors h4:hover {
+    color: var(--blue1);
 }
 
 #doctors > div {
