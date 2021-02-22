@@ -258,11 +258,11 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 }
 
 #appointment form input:valid {
-    border: 2px solid green;
+    border-bottom: 2px solid green;
 }
 
 #appointment form input:invalid {
-    border: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
 #appointment form input:focus {
@@ -271,8 +271,9 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 }
 
 #appointment form button {
-    border: 2px solid red;
+    border-bottom: 2px solid red;
     color: red;
+    width: fit-content;
 }
 
 #appointment form > input:valid ~ input:valid ~ input:valid ~ input:valid ~ input:valid  ~ button {
