@@ -58,12 +58,14 @@ section {
 h3 {
     font-size: 1.5em;
     text-decoration: underline;
+    color: #421ee2cb;
 }
 
 h6 {
     font-size: 1.2em;
     text-decoration: underline;
     text-decoration-style: wavy;
+    color: #098633;
 }
 
 main {
@@ -97,8 +99,6 @@ main > *:nth-child(2n) {
 
 header {
     background-color: #28b6b177;
-    position: sticky;
-    top: 0;
 }
 
 header img {
@@ -197,6 +197,15 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
     flex: 1 1 100%;
 }
 
+#services span {
+    color: #003Fff;
+}
+
+#services span ~ h4 {
+    text-decoration: underline;
+    text-decoration-color: #0004ff;
+}
+
 #services > div > div > div {
     margin: 3vh 0;
 }
@@ -218,6 +227,13 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 
 #about > div > div > div > span {
     width: 20px;
+    color: #fa000094;
+    text-align: right;
+}
+
+#about > div > div > div > h4 {
+    text-decoration: underline;
+    text-decoration-color: #fa000094;
 }
 
 /*
@@ -308,6 +324,11 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
  * doctors section
  */
 
+#doctors h4 {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
 #doctors > div {
     display: flex;
     flex-direction: column;
@@ -361,6 +382,7 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
     text-indent: .5rem;
     align-self: flex-end;
     margin-top: auto;
+    text-decoration: underline;
 }
 
 /*
