@@ -14,21 +14,19 @@ nav_appli_li.addEventListener('mouseleave', () => {
 window.addEventListener('load', function() {
     let all = document.querySelectorAll('main > *');
     all.forEach(element => {
-        setTimeout(function() {
             element.style.visibility = "visible";
             element.animate(
-                [
-                    {
-                        transform: 'translateX(-100%)'
-                    },
-                    {
-                        transform: 'translateX(0%)'
-                    }
-                ], {
-                duration: 500,
-                animationFillMode: 'forwards'
+            [
+                {
+                    transform: 'translateX(-100%)'
+                },
+                {
+                    transform: 'translateX(0%)'
                 }
-            );
-        }, 500);
+            ], {
+            duration: 500,
+            animationFillMode: 'forwards'
+            }
+        );
     });
 });
