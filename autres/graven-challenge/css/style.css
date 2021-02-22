@@ -26,6 +26,21 @@
     border-radius: 100px;
 }
 
+@keyframes phone {
+    0% {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(-45deg);
+    }
+    66% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 main {
     margin-left: .5rem;
 }
@@ -98,6 +113,11 @@ header {
 header img {
     display: inline;
     position: absolute;
+}
+
+header span:hover {
+    animation: .5s linear phone;
+
 }
 
 header > div:first-child {
