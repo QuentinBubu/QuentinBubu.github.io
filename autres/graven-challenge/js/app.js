@@ -11,14 +11,6 @@ nav_appli_li.addEventListener('mouseleave', () => {
     nav_appli_span.classList.add('fa-angle-down');
 });
 
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-
 window.addEventListener('load', function() {
     let all = document.querySelectorAll('main > *');
     all.forEach(element => {

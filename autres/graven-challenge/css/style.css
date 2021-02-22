@@ -82,10 +82,7 @@ header {
 
 header img {
     display: inline;
-}
-
-header > div > h1 > a {
-    vertical-align: sub;
+    position: absolute;
 }
 
 header > div:first-child {
@@ -97,6 +94,7 @@ header > div:first-child {
 
 header > div > p {
     align-self: flex-end;
+    margin-top: .5rem;
 }
 
 /*
@@ -196,7 +194,7 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
  * form section
  */
 
-#appointment > div{
+#appointment > div {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -318,6 +316,7 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 #news > div:last-child > div {
     display: flex;
     flex-direction: column;
+    margin: 1rem 0;
 }
 
 #news > div:last-child > div > div:last-child {
@@ -375,4 +374,230 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 #facts > div:last-child > div:last-child {
     grid-column: span 2;
     margin: 1rem 0;
+}
+
+/*
+ * footer
+ */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    background-color: var(--blue1);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer li:hover {
+    font-weight: 700;
+    color: #3d64e6;
+}
+footer li:hover::before {
+    content: "\2192";
+    position: absolute;
+    margin-left: -30px;
+}
+
+footer > div:last-child li:hover::after {
+    content: "\2190";
+    position: absolute;
+    margin-left: 8px;
+}
+
+footer img {
+    display: inline;
+    position: absolute;
+}
+
+/*
+ * copyright
+ */
+
+body > p,
+body > a {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    background-color: var(--white1);
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 14px;
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+    
+    main {
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > * {
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        max-width: 100vw;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    main > *:nth-child(2n) {
+        max-width: 100vw;
+        width: 100vw;
+    }
+
+    #application,
+    #news {
+        width: 100vw;
+    }
+
+    /*
+     * nav
+     */
+
+     header {
+        text-align: center;
+    }
+    
+    #drop {
+        width: 0;
+        height: 0;
+    }
+
+    header > div:last-child > nav > label,
+    #drop {
+        display: inline;
+    }
+
+    header > div:last-child > nav > ul {
+        display: none;
+    }
+
+    header > div:last-child > nav > label ~ #drop:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    header > div:last-child > nav > ul > li > a:hover ~ input ~ ul,
+    header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
+    display: block;
+    position: static;
+    background-color: #00bfba;
+    margin-left: 5rem;
+    padding: .3rem;
+}
+
+    /*
+     * banner
+     */
+
+    #home {
+        flex-direction: column-reverse;
+    }
+
+    #home > div:first-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home img {
+        align-self: center;
+    }
+
+    /*
+     * appointement responsive section
+     */
+
+    #appointment > div {
+        flex-direction: column;
+    }
+
+    #appointment > div > div:first-child > form {
+        align-items: center;
+    }
+
+    /*
+     * application responsive section
+     */
+
+    #application > div > div:first-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    #application > div > div:last-child > p:first-child {
+        text-align: center;
+    }
+
+    #application > div > div:last-child > div {
+        justify-content: center;
+    }
+
+    /*
+     * doctors responsive section
+     */
+
+    #doctors img {
+        width: auto;
+        height: 84vh;
+        margin: 0 auto;
+    }
+
+     #doctors > div > div:last-child {
+        flex-direction: column;
+    }
+
+    #doctors > div > div > div {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: right;
+    }
+
+    /*
+     * news responsive section
+     */
+    
+    #news > div:last-child {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*
+     * contact responsive section
+     */
+
+     #contact form {
+        align-items: center;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        width: 80%;
+    }
+
+    #contact textarea {
+        height: 20vh;
+    }
+
+    /*
+     * footer responsive section
+     */
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer > * {
+        margin: 1rem 0;
+    }
+
+
 }
