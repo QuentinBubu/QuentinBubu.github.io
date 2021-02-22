@@ -23,13 +23,7 @@
 
 ::-webkit-scrollbar-thumb {
     background: #2156eb;
-}
-
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:active {
     border-radius: 100px;
-    -webkit-transition: border-radius 2s;
-    transition: border-radius 2s;
 }
 
 main {
