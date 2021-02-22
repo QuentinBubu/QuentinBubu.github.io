@@ -2,6 +2,8 @@
 
 * Un certains nombres d'animations sont présentes, les trouveras tu toutes?
 
+* En espérant que ça te plaira!
+
 ---
 
 * Les animations:
