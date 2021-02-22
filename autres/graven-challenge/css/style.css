@@ -326,11 +326,31 @@ header > div:last-child > nav > ul > li > a ~ input ~ ul:hover {
 
  #doctors h4 {
     font-weight: 900;
-    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
 }
 
 #doctors h4:hover {
-    color: var(--blue1);
+    color: #2156eb;
+}
+
+#doctors h4:after {
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 0;
+    right: 0;
+    background: #fff;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+#doctors h4:hover:after {
+    width: 100%;
+    left: 0;
+    background: #fff;
 }
 
 #doctors > div {
