@@ -6,7 +6,7 @@
 
 ---
 
-Les animations:
+Les effets:
 * la flèche du header
 * Les formulaire qui change de couleur quand il est valide
 * Le nom des médecins
