@@ -1,2 +1,4 @@
 $RECYCLE.BIN/*
 .history/*
+*/.history/*
+*/*/.history/*

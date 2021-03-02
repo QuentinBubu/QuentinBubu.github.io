@@ -25,6 +25,10 @@
     font-weight: 850;
 }
 
+main {
+    margin: 1.5rem 0
+}
+
 label {
     vertical-align: unset;
 }
@@ -33,17 +37,17 @@ input {
     margin: .5rem;
 }
 
-div {
-    text-align: center;
-    align-content: center;
+form {
+    margin: 5px 0;
 }
 
 #save,
-#save ~ label {
-    margin: 0 100px;
-    padding: 10px;
+#save ~ label,
+#selectInput,
+#startTest {
+    padding: 5px;
     border: 1px solid black;
-    border-radius: 50%;
+    border-radius: 75px;
     background-color: #acacac;
 }
 
@@ -54,21 +58,19 @@ div {
     position: absolute;
 }
 
+div > div {
+    display: flex;
+    justify-content: space-around;
+}
+
 #selection {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    text-align: right;
+    grid-template-columns: repeat(8, .1fr 5fr);
 }
 
-#selection > section {
-    display: block;
-    text-align: left;
-}
-
-#selection > button,
-#selection > hr,
-#selection > section {
-    grid-column: span 16;
+#form-selection > section:last-child {
+    display: flex;
+    justify-content: space-around;
 }
 
 #form {
@@ -80,10 +82,18 @@ table {
 }
 
 thead {
-    font-size: 20px;
+    font-size: 1.3rem;
 }
+
 
 td {
     border: 2px solid black;
     padding: .5rem;
+    height: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    #selection {
+        grid-template-columns: repeat(2, .1fr 5fr);
+    }
 }

@@ -1,4 +1,5 @@
 let form = document.querySelector("#form");
+let form_selection = document.querySelector("#form-selection");
 let selection = document.querySelector("#selection");
 let tbody = document.querySelector("#tbody");
 let score = document.querySelector("#score");
@@ -69,17 +70,17 @@ window.addEventListener("load", async function () {
             .then(function (donnees) {
                 data = donnees;
                 for (const key of Object.entries(data)) {
-                    let label = document.createElement("label");
-                    label.setAttribute("for", key[0].replace(' ', '-'));
-                    label.innerHTML = key[0];
-                    selection.appendChild(label);
-
                     let input = document.createElement("input");
                     input.setAttribute("type", "checkbox");
                     input.setAttribute("class", "choose");
                     input.setAttribute("value", key[0]);
                     input.setAttribute("id", key[0].replace(' ', '-'));
                     selection.appendChild(input);
+
+                    let label = document.createElement("label");
+                    label.setAttribute("for", key[0].replace(' ', '-'));
+                    label.innerHTML = key[0];
+                    selection.appendChild(label);
                 }
             });
     } catch (errors) {
@@ -91,7 +92,7 @@ startTest.addEventListener("click", function () {
     form.style.display = "block";
     save.style.display = "none";
     document.querySelector("label[for=load]").style.display = "none";
-    selection.style.display = "none";
+    form_selection.style.display = "none";
 
     const liste = document.querySelectorAll(".choose:checked");
     const sentences = document.querySelectorAll(".sentences:checked");
@@ -252,7 +253,7 @@ function menu() {
     form.style.display = "none";
     save.style.display = "inline-block";
     document.querySelector("label[for=load]").style.display = "inline-block";
-    selection.style.display = "grid";
+    form_selection.style.display = "block";
     let tr = document.querySelectorAll("tr[data-word]");
     tr.forEach((element) => {
         element.remove();

@@ -31,10 +31,7 @@
     </header>
     <main>
         <div>
-            <form id="selection">
-                <button type="button" id="selectInput">Tout sélectionner</button>
-                <button type="button" id="startTest">Lancer un test</button>
-                <hr />
+            <form id="form-selection">
                 <section>
                     <h3>Phrases au:</h3>
                     <input type="checkbox" class="sentences" id="prétérit" value="prétérit" />
@@ -46,12 +43,19 @@
                     <input type="checkbox" class="sentences" id="past-perfect" value="past-perfect" />
                     <label for="past-perfect">Past Perfect</label>
                 </section>
+                <section id="selection"></section>
                 <hr />
+                <section>
+                    <button type="button" id="selectInput">Tout sélectionner</button>
+                    <button type="button" id="startTest">Lancer un test</button>
+                </section>
             </form>
-            <button id="save">Enregistrer ma séléction</button>
-            <label for="load">Charger un fichier
-                <input type="file" id="load" value="Charger une séléction" />
-            </label>
+            <div>
+                <button id="save">Enregistrer ma séléction</button>
+                <label for="load">Charger un fichier
+                    <input type="file" id="load" value="Charger une séléction" />
+                </label>
+            </div>
         </div>
         <div id="form">
             <form>
