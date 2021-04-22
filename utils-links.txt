@@ -44,6 +44,7 @@ https://developer.mozilla.org/fr/
 https://www.learndev.info/fr
 https://laragon.org/download/index.html
 https://javascript.info/
+https://getwaves.io
 https://www.commentcamarche.net/faq/46512-pdo-gerer-les-erreurs
 https://www.alsacreations.com/astuce/lire/78-Quelle-est-la-difference-entre-les-chemins-relatifs-et-absolus-.html
 https://www.easypartner.fr/blog/quest-que-php-8-va-apporter/
