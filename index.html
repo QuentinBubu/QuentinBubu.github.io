@@ -32,13 +32,43 @@
 
     <div id="top"></div>
     <header class="first">
-        <img src="assets/picture/favicon.ico" alt="Quentin Bubu" class="hdcontent">
+        <img id="header_first_image" src="assets/picture/favicon.ico" alt="Quentin Bubu" class="hdcontent" onclick="turnHeaderFirstImage();">
         <h1 class="hdcontent">Quentin Bubu</h1>
     </header>
     <header class="second" id="second">
         <img src="assets/picture/favicon.ico" alt="Quentin Bubu">
         <h1>Quentin Bubu</h1>
+        <p title="Change log" class="header-second-version" id="ver_inf_btn" onclick="versionInfosDisplay();" onmouseover="verOn(this.id);" onmouseout="verOut(this.id);">v.3.0.0</p>
     </header>
+
+    <div id="blurBgVerInfos"></div>
+    <div class="version-infos" id="ver_inf">
+        <h1 class="version-infos-title">Version 3</h1>
+        <div class="hr"></div>
+        
+        <!-- Attention mettre update + récente en première position ! -->
+        <div class="version-infos-version">
+            <div class="version-infos-version-infos">
+                <p class="version-infos-version-id">[3.0.0] - <span class="version-infos-version-date">2021-06-22</span></p>
+            </div>
+            <div class="version-infos-version-desc">
+                <p class="vivd-name">Added</p>
+                <ul>
+                    <li>Create a change log.</li>
+                    <li>Create inpage bar for display informations about this website.</li>
+                </ul>
+                <p class="vivd-name">Changed</p>
+                <ul>
+                    <li>Fix several invalid links in the footer.</li>
+                </ul>
+                <p class="vivd-name">Removed</p>
+                <ul>
+                    <li>Vertical navbar.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 
     <main>
         <p>
