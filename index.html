@@ -3,41 +3,54 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Quentin Bubu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="[>Portofolio] Quentin Bubu - v3">
     <meta property="og:image" content="https://quentinbubu.github.io/assets/picture/favicon.ico" />
     <meta property="og:image:type" content="image/ico">
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
     <meta property="og:url" content="https://www.quentinbubu.github.io" />
-    <meta property="og:description" 
-  content="Portofolio de Quentin Bubu!
-            Venez jeter un oeil! ;)" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image:alt" content="Profil image" />
-    <meta name="author" content="Quentin Bubu" />
-    <meta name="description" content="This is Quentin Bubu's portfolio! :)" />
-    <meta name= "keywords" content="web developper, back-end, front-end, fullstack, php, html, css, developper, develooppeur, web creator" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="shortcut icon" href="./assets/picture/favicon.ico" type="image/x-icon" />
-    <title>Quentin Bubu</title>
+    <meta property="og:description" content="En tant que développeur full stack, je mets à disposition mes connaissances sur GitHub.">
+    <meta property="og:type" content="website">
+    <meta property="og:image:alt" content="Profil image">
+    <meta property="og:site_name" content="Quentin Bubu Website">
+    <meta name="author" content="Quentin Bubu">
+    <meta name="description" content="En tant que développeur full stack, je mets à disposition mes connaissances sur GitHub.">
+    <meta name= "keywords" content="web developper, back-end, front-end, fullstack, php, html, css, developper, develooppeur, web creator">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/picture/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Commissioner:wght@100&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <title>[>Portofolio] Quentin Bubu - v3</title>
 </head>
 
 <body>
-    <header>
+
+    <div id="top"></div>
+    <header class="first">
+        <img src="assets/picture/favicon.ico" alt="Quentin Bubu" class="hdcontent">
+        <h1 class="hdcontent">Quentin Bubu</h1>
+    </header>
+    <header class="second" id="second">
         <img src="assets/picture/favicon.ico" alt="Quentin Bubu">
         <h1>Quentin Bubu</h1>
     </header>
+
     <main>
-        <p title="Je me présente :)" id="presentation">
-            &#8195;Je m'appelle Quentin,<br />&#8195;Jeune développeur web fullstack, je suis perfectionniste et aime
-            les codes <mark>bien fait & structurés</mark>.
+        <p>
+            Bonjour,<br>Je m'appelle Quentin, jeune développeur web fullstack, je suis
+            perfectionniste et j'aime les codes bien fait & structurés.<br>Actuellement
+            Lycéen, je suis sans cesse en quête d'apprentissage et de la meilleur
+            maitrise des divers langages et logiciels que j'utilise. La motivation et
+            la rigourosité sont mes principales qualités.<br>Sur ce, bonne visite !
         </p>
-        <p title="Je me présente :)">Actuellement Lycéen, je suis sans cesse à la quête de l'apprentissage et de la
-            <mark>meilleur maîtrise</mark> des divers langages et logiciels utilisés.</p>
-        <p>La <mark>rigourosité</mark>, la <mark>patience</mark>, la <mark>passion</mark> et <mark>l'envie</mark> sont
-            mes principales qualités!</p>
+        <div class="scroll-down">
+            <a href="#langages" onclick="overflowY()"><span></span></a>
+        </div>
         <article id="langages">
             <h3 id="front">Mes langages connus Front-end:</h3>
             <section>
@@ -191,177 +204,87 @@
                     </a>
                 </article>
             </section>
-            <h3 id="projects">Mes Projets:</h3>
+
+            <!-- Projets. -->
+            <h3 id="projects">Mes Projets :</h3>
             <section>
-                <article title="Fight Game">
-                    <a href="https://github.com/QuentinBubu/Fight-Game">
-                        <figure>
-                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=QuentinBubu&repo=Fight-Game"
-                                alt="Fight Game repository" />
-                        </figure>
-                        <figcaption>
-                            Fight Game repository
-                        </figcaption>
-                    </a>
+
+                <article class="project-box" onmouseover="pbOne();" onmouseout="pbOneOut();">
+                    <p class="project-box-title">Fight Game</p>
+                    <p class="project-box-feedback"></p>
+                    <p class="project-box-desc">A fun console game to play with friends!</p>
+                    <a class="project-box-discover" id="pbd_one" href="https://github.com/QuentinBubu/Fight-Game">Découvrir</a>
                 </article>
-                <article title="Website">
-                    <a href="https://github.com/QuentinBubu/QuentinBubu.github.io">
-                        <figure>
-                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=QuentinBubu&repo=QuentinBubu.github.io"
-                                alt="Website repository" />
-                        </figure>
-                        <figcaption>
-                            Website repository
-                        </figcaption>
-                    </a>
+
+                <article class="project-box" onmouseover="pbTwo();" onmouseout="pbTwoOut();">
+                    <p class="project-box-title">Quentin B. Website</p>
+                    <p class="project-box-feedback"></p>
+                    <p class="project-box-desc">My GitHub website where you are<br>now!</p>
+                    <a class="project-box-discover" id="pbd_two" href="https://github.com/QuentinBubu/QuentinBubu.github.io">Découvrir</a>
                 </article>
-                <article title="Models">
-                    <a href="https://github.com/QuentinBubu/models">
-                        <figure>
-                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=QuentinBubu&repo=models"
-                                alt="Models" />
-                        </figure>
-                        <figcaption>
-                            Models
-                        </figcaption>
-                    </a>
+
+                <article class="project-box" onmouseover="pbThree();" onmouseout="pbThreeOut();">
+                    <p class="project-box-title">Made</p>
+                    <p class="project-box-feedback"></p>
+                    <p class="project-box-desc">All the files related to my Made pratical work are available here.</p>
+                    <a class="project-box-discover" id="pbd_three" href="https://github.com/QuentinBubu/made">Découvrir</a>
                 </article>
-                <article title="VillardAPI">
-                    <a href="https://github.com/QuentinBubu/VillardAPI">
-                        <figure>
-                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=QuentinBubu&repo=VillardAPI"
-                                alt="VillardAPI" />
-                        </figure>
-                        <figcaption>
-                            VillardAPI
-                        </figcaption>
-                    </a>
+
+                <article class="project-box" onmouseover="pbFour();" onmouseout="pbFourOut();">
+                    <p class="project-box-title">Models</p>
+                    <p class="project-box-feedback"></p>
+                    <p class="project-box-desc">- No description provided -</p>
+                    <a class="project-box-discover pbd-other" id="pbd_four" href="https://github.com/QuentinBubu/models">Découvrir</a>
                 </article>
-                <article title="Made TP">
-                    <a href="https://github.com/QuentinBubu/made">
-                        <figure>
-                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=QuentinBubu&repo=made"
-                                alt="Made TP" />
-                        </figure>
-                        <figcaption>
-                            Made TP
-                        </figcaption>
-                    </a>
+
+                <article class="project-box" onmouseover="pbFive();" onmouseout="pbFiveOut();">
+                    <p class="project-box-title">VillardAPI</p>
+                    <p class="project-box-feedback"></p>
+                    <p class="project-box-desc">- No description provided -</p>
+                    <a class="project-box-discover pbd-other" id="pbd_five" href="https://github.com/QuentinBubu/VillardAPI">Découvrir</a>
                 </article>
-                <article title="GitHub Desktop">
-                    <a href="https://github.com/QuentinBubu/civilisationCraft">
-                        <figure>
-                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=QuentinBubu&repo=civilisationCraft"
-                                alt="Civilisation Craft" />
-                        </figure>
-                        <figcaption>
-                            Civilisation Craft
-                        </figcaption>
-                    </a>
+
+                <article class="project-box" onmouseover="pbSix();" onmouseout="pbSixOut();">
+                    <p class="project-box-title">CivilisationCraft</p>
+                    <p class="project-box-feedback"></p>
+                    <p class="project-box-desc">- No description provided -</p>
+                    <a class="project-box-discover pbd-other" id="pbd_six" href="https://github.com/QuentinBubu/civilisationCraft">Découvrir</a>
                 </article>
+                
             </section>
+            <!-- endsection -->
         </article>
+        
         <p>
             Également passionné par le ski (&lt;3 ⛷ UwU), le tennis, le vélo, l'électronique, l'informatique et bien
             plus encore!!
         </p>
     </main>
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="#presentation">Présentation</a> - </li>
-                <li><a href="#front">Front</a> - </li>
-                <li><a href="#back">Back & database</a> - </li>
-                <li><a href="#others">Autres</a> - </li>
-                <li><a href="#tools">Outils</a> - </li>
-                <li><a href="#projects">Projets</a> - </li>
-                <li><a href="#networks">Réseaux</a> - </li>
-                <li><a href="#servers">Serve</a>urs</li>
-            </ul>
-        </nav>
-    </aside>
+
     <footer>
-        <section>
-            <h2 id="networks">Mes réseaux:</h2>
-            <section class="reseaux">
-                <article>
-                    <a href="mailto:QuentinBubu.dev@gmail.com">
-                        <img
-                            src="./assets/picture/gmail.png"
-                            alt="Gmail Logo"
-                        />
-                    </a>
-                </article>
-                <article>
-                    <a href="https://QuentinBubu.github.com">
-                        <img
-                            src="./assets/picture/github.png"
-                            alt="GitHub Logo"
-                        />
-                    </a>
-                </article>
-                <article>
-                    <a href="https://instagram.com/Quentin_bubu">
-                        <img
-                            src="./assets/picture/instagram.png"
-                            alt="Instagram Logo"
-                        />
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.snapchat.com/add/xgaming_1">
-                        <img
-                            src="./assets/picture/snapchat.png"
-                            alt="Snapchat Logo"
-                        />
-                    </a>
-                </article>
-            </section>
-            <h2 id="servers">Les servers de développement sur lesquelles je suis présent:</h2>
-            <section>
-                <article>
-                    <a href="https://discord.gg/3xRUnHB">
-                        <p>Mon serveur: Pépouze</p>
-                        <img
-                            src="./assets/picture/pepouze.png"
-                            alt="Discord Pépouze"
-                        />
-                    </a>
-                </article>
-                <article>
-                    <a href="https://discord.gg/zcWp9sC">
-                        <p>NaN - Not a Name</p>
-                        <img
-                            src="./assets/picture/nan.gif"
-                            alt="Discord NaN"
-                        />
-                    </a>
-                </article>
-                <article> 
-                    <a href="https://discord.gg/xN9nZUC">
-                        <p>Made</p>
-                        <img
-                            src="./assets/picture/made.png"
-                            alt="Discord Made"
-                        />
-                    </a>
-                </article>
-                <article>
-                    <a href="http://discord.readthedocs.fr/">
-                        <p>Read The Docs</p>
-                        <img
-                            src="./assets/picture/rtd.png"
-                            alt="Discord Read The Docs"
-                        />
-                    </a>
-                </article>
-            </section>
-            <p>E-Mail: <a href="mailto:QuentinBubu.dev@gmail.com">QuentinBubu.dev@gmail.com</a></p>
-        </section>
-        <hr />
-        <section>
-            <p>Fait avec amour ❤ & passion, Quentin Bubu 😜</p>
-        </section>
+        <div class="column">
+            <div class="ftr-infos">
+                <p>Quentin Bubu</p>
+                <p>Je vous aime mes fans ♥</p>
+            </div>
+            <div class="ftr-networks">
+                <p class="ftr-item-category">Mes réseaux</p>
+                <a href="mailto:quentinBubu.dev@gmail.com" class="ftr-item">GMail</a>
+                <a href="https://quentinBubu.github.io" class="ftr-item">GitHub</a>
+                <a href="https://instagram.com/Quentin_bubu" class="ftr-item">Instagram</a>
+                <a href="https://www.snapchat.com/add/xgaming_1" class="ftr-item">Snapchat</a>
+            </div>
+            <div class="ftr-discord">
+                <p class="ftr-item-category">Des serveurs Discord</p>
+                <a href="https://discord.com/invite/xN9nZUC" class="ftr-item">Made</a>
+                <a href="https://discord.com/invite/gHWZbCd" class="ftr-item">Read The Docs</a>
+                <a href="https://discord.com/invite/NWQvTeX" class="ftr-item">Docstring</a>
+                <a href="https://discord.com/invite/zcWp9sC" class="ftr-item">Not a Name</a>
+                <a href="https://discord.com/invite/aNrGbk6NgE" class="ftr-item">TNtubeverse</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
