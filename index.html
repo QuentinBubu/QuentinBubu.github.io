@@ -38,18 +38,22 @@
     <header class="second" id="second">
         <img src="assets/picture/favicon.ico" alt="Quentin Bubu">
         <h1>Quentin Bubu</h1>
-        <p title="Change log" class="header-second-version" id="ver_inf_btn" onclick="versionInfosDisplay();" onmouseover="verOn(this.id);" onmouseout="verOut(this.id);">v.3.0.0</p>
+        <p title="Change log" class="header-second-version" id="ver_inf_btn" onclick="versionInfosDisplay();" onmouseover="infosAbouVersionInfosBtn();" onmouseout="infosAboutNone();">v.3.0.0</p>
     </header>
+
+    <div id="displayInfosElement">
+        <p id="die_infos"></p>
+    </div>
 
     <div id="blurBgVerInfos"></div>
     <div class="version-infos" id="ver_inf">
-        <h1 class="version-infos-title">Version 3</h1>
+        <h1 class="version-infos-title" id="changelog_title" onclick="changelogTitle();">Version 3</h1>
         <div class="hr"></div>
         
         <!-- Attention mettre update + récente en première position ! -->
-        <div class="version-infos-version">
+        <div class="version-infos-version" id="changelog">
             <div class="version-infos-version-infos">
-                <p class="version-infos-version-id">[3.0.0] - <span class="version-infos-version-date">2021-06-22</span></p>
+                <p class="version-infos-version-id">[3.0.0] - <span class="version-infos-version-date">2021-06-24</span></p>
             </div>
             <div class="version-infos-version-desc">
                 <p class="vivd-name">Added</p>
@@ -68,6 +72,18 @@
             </div>
         </div>
 
+        <div class="version-infos-version slide-out" id="sneak_peek">
+            <div class="version-infos-version-infos">
+                <p class="version-infos-version-id">Bientôt...</p>
+            </div>
+            <div class="version-infos-version-desc">
+                <p class="vivd-name">Nouvelle-s fonctionnalité-s</p>
+                <ul>
+                    <li>Tableau de compétences à la place des skill-bars.</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
     <main>
@@ -82,162 +98,208 @@
             <a href="#langages" onclick="overflowY()"><span></span></a>
         </div>
         <article id="langages">
-            <h3 id="front">Mes langages connus Front-end:</h3>
-            <section>
+
+            <h3 id="front" onclick="retract('langages-frontend-section');">Mes langages Front-end</h3>
+            <section id="langages-frontend-section">
                 <article title="Le HTML (Hypertext Markup Language)">
-                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="article-link">
                         <figure>
-                            <img src="./assets/picture/html.png" alt="Logo HTML" />
+                            <p class="figure-title">HTML</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/90.png" alt="How know this langage">
+                            <div class="bar">
+                                <div class="bar-ninety-pourcents"></div>
+                                <p class="pourcents">90%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
                 <article title="Le CSS (Cascading Style Sheets)">
-                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS">
+                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS" class="article-link">
                         <figure>
-                            <img src="./assets/picture/css.png" alt="Logo CSS" />
+                            <p class="figure-title">CSS</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/75.png" alt="How know this langage">
+                            <div class="bar">
+                                <div class="bar-seventy-five-pourcents"></div>
+                                <p class="pourcents">75%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
                 <article title="Le JS (JavaScript)">
-                    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+                    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="article-link">
                         <figure>
-                            <img src="./assets/picture/js.png" alt="Logo JS" />
+                            <p class="figure-title">JS</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/50.png" alt="How know this langage">
+                            <div class="bar">
+                                <div class="bar-fifty-pourcents"></div>
+                                <p class="pourcents">50%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
             </section>
-            <h3 id="back">Mes langages  Back-end & base de données connus:</h3>
-            <section>
+
+            <h3 id="back" onclick="retract('langages-backend-section');">Mes langages Back-end</h3>
+            <section id="langages-backend-section">
                 <article title="Le PHP (PHP Hypertext Processor)">
-                    <a href="https://www.php.net">
+                    <a href="https://www.php.net" class="article-link">
                         <figure>
-                            <img src="./assets/picture/php.svg" alt="Logo PHP" />
+                            <p class="figure-title">PHP</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/75.png" alt="How know this langage">
+                            <div class="bar">
+                                <div class="bar-seventy-five-pourcents"></div>
+                                <p class="pourcents">75%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
                 <article title="MySQL">
-                    <a href="https://www.mysql.com/fr/">
+                    <a href="https://www.mysql.com/fr/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/MySQL.png" alt="Logo MySQL" />
+                            <p class="figure-title">MySQL</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/90.png" alt="How know this database">
+                            <div class="bar">
+                                <div class="bar-ninety-pourcents"></div>
+                                <p class="pourcents">90%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
                 <article title="Le SQL (Structured Query Language)">
-                    <a href="https://www.sql.sh/">
+                    <a href="https://www.sql.sh/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/sql.png" alt="Logo SQL" />
+                            <p class="figure-title">SQL</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/75.png" alt="How know this langage">
+                            <div class="bar">
+                                <div class="bar-seventy-five-pourcents"></div>
+                                <p class="pourcents">75%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
             </section>
-            <h3 id="others">Autres langages connus:</h3>
-            <section>
+
+            <h3 id="others" onclick="retract('other-langages-section');">Mes autres langages</h3>
+            <section id="other-langages-section">
                 <article title="Arduino">
-                    <a href="https://www.arduino.cc/">
+                    <a href="https://www.arduino.cc/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/arduino.png" alt="Logo Arduino" />
+                            <p class="figure-title">Arduino</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/90.png" alt="How know this langage">
+                            <div class="bar">
+                                <div class="bar-ninety-pourcents"></div>
+                                <p class="pourcents">90%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
                 <article title="Python">
-                    <a href="https://www.python.org/">
+                    <a href="https://www.python.org/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/python.png" alt="Logo Python" />
+                            <p class="figure-title">Python</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/75.png" alt="How know this langage">
+                            <div class="bar">
+                                <div class="bar-seventy-five-pourcents"></div>
+                                <p class="pourcents">75%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
             </section>
-            <h3 id="tools">Mes outils de développement utilisés:</h3>
-            <section>
+            
+            <h3 id="tools" onclick="retract('devtools-section');">Mes outils de développement</h3>
+            <section id="devtools-section">
                 <article title="Visual Studio Code">
-                    <a href="https://code.visualstudio.com/">
+                    <a href="https://code.visualstudio.com/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/vsc.png" alt="Logo de Visual Studio Code" />
+                            <p class="figure-title">Visual Studio Code</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/90.png" alt="How know this tool">
+                            <div class="bar">
+                                <div class="bar-ninety-pourcents"></div>
+                                <p class="pourcents">90%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
                 <article title="Laragon">
-                    <a href="https://laragon.org/">
+                    <a href="https://laragon.org/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/laragon.svg" alt="Logo de Laragon" />
+                            <p class="figure-title">Laragon</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/90.png" alt="How know this tool">
+                            <div class="bar">
+                                <div class="bar-ninety-pourcents"></div>
+                                <p class="pourcents">90%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
                 <article title="Composer">
-                    <a href="https://getcomposer.org/">
+                    <a href="https://getcomposer.org/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/composer.png" alt="Logo de Composer" />
+                            <p class="figure-title">Composer</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/75.png" alt="How know this tool">
+                            <div class="bar">
+                                <div class="bar-seventy-five-pourcents"></div>
+                                <p class="pourcents">70%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
-                <article title="Git">
-                    <a href="https://git-scm.com/">
+                <article title="Git" class="martop-devtools-section">
+                    <a href="https://git-scm.com/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/git.png" alt="Logo de Git" />
+                            <p class="figure-title">Git</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/25.png" alt="How know this tool">
+                            <div class="bar">
+                                <div class="bar-twenty-five-pourcents"></div>
+                                <p class="pourcents">25%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
-                <article title="GitHub">
-                    <a href="https://github.com/">
+                <article title="GitHub" class="martop-devtools-section">
+                    <a href="https://github.com/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/github.png" alt="Logo de GitHub" />
+                            <p class="figure-title">GitHub</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/90.png" alt="How know this tool">
+                            <div class="bar">
+                                <div class="bar-ninety-pourcents"></div>
+                                <p class="pourcents">90%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
-                <article title="GitHub Desktop">
-                    <a href="https://desktop.github.com/">
+                <article title="GitHub Desktop" class="martop-devtools-section">
+                    <a href="https://desktop.github.com/" class="article-link">
                         <figure>
-                            <img src="./assets/picture/githubDesktop.svg" alt="Logo de GitHub Desktop" />
+                            <p class="figure-title">GitHub Desktop</p>
                         </figure>
                         <figcaption>
-                            <img src="./assets/picture/90.png" alt="How know this tool">
+                            <div class="bar">
+                                <div class="bar-ninety-pourcents"></div>
+                                <p class="pourcents">90%</p>
+                            </div>
                         </figcaption>
                     </a>
                 </article>
             </section>
 
             <!-- Projets. -->
-            <h3 id="projects">Mes Projets :</h3>
-            <section>
+            <h3 id="projects" onclick="retract('projects-section');">Mes Projets</h3>
+            <section id="projects-section">
 
                 <article class="project-box" onmouseover="pbOne();" onmouseout="pbOneOut();">
                     <p class="project-box-title">Fight Game</p>
@@ -284,18 +346,17 @@
             </section>
             <!-- endsection -->
         </article>
-        
-        <p>
-            Également passionné par le ski (&lt;3 ⛷ UwU), le tennis, le vélo, l'électronique, l'informatique et bien
-            plus encore!!
-        </p>
+
     </main>
 
     <footer>
         <div class="column">
             <div class="ftr-infos">
                 <p>Quentin Bubu</p>
-                <p>Je vous aime mes fans ♥</p>
+                <p>J'aime le ski,
+                    J'aime le vélo,
+                    j'aime le code. ♥
+                </p>
             </div>
             <div class="ftr-networks">
                 <p class="ftr-item-category">Mes réseaux</p>

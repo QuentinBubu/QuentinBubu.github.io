@@ -125,10 +125,57 @@ function versionInfosDisplay(){
   }
 }
 
-function verOn(element_id){
-  document.getElementById(element_id).innerHTML = "Changelog";
+var sneakPeek = 0;
+
+function changelogTitle(){
+  if (sneakPeek == 0){
+    document.getElementById('changelog').classList.add('slide-out');
+    document.getElementById('sneak_peek').classList.remove('slide-out');
+    sneakPeek = 1;
+  }
+  else{
+    document.getElementById('sneak_peek').classList.add('slide-out');
+    document.getElementById('changelog').classList.remove('slide-out');
+    sneakPeek = 0;
+  }
 }
 
-function verOut(element_id){
-  document.getElementById(element_id).innerHTML = "v.3.0.0";
+// function verOn(element_id){
+//   document.getElementById(element_id).innerHTML = "Changelog";
+// }
+
+// function verOut(element_id){
+//   document.getElementById(element_id).innerHTML = "v.3.0.0";
+// }
+
+function infosAbouVersionInfosBtn(){
+	document.getElementById('die_infos').innerHTML = "[Version actuelle] Clickez pour ouvrir le change log.";
+	document.getElementById('displayInfosElement').style.marginBottom = "25px";
+}
+function infosAboutMediaLinks(){
+	document.getElementById('die_infos').innerHTML = "[Liens media] Plateformes de vidéos et directs.";
+	document.getElementById('displayInfosElement').style.marginBottom = "25px";
+}
+function infosAboutMailLinks(){
+	document.getElementById('die_infos').innerHTML = "[Liens mail] Boîtes mail.";
+	document.getElementById('displayInfosElement').style.marginBottom = "25px";
+}
+function infosAboutEcommerceLinks(){
+	document.getElementById('die_infos').innerHTML = "[Liens ecommerce] Ventes et achats.";
+	document.getElementById('displayInfosElement').style.marginBottom = "25px";
+}
+function infosAboutAnimeLinks(){
+	document.getElementById('die_infos').innerHTML = "[Liens anime] Plateforme d'animes.";
+	document.getElementById('displayInfosElement').style.marginBottom = "25px";
+}
+
+function infosAboutNone(){
+	document.getElementById('die_infos').innerHTML = "";
+	document.getElementById('displayInfosElement').style.marginBottom = "-25px";
+}
+
+// Section.
+var retracta = 0;
+function retract(section_id){
+  document.getElementById(section_id).classList.toggle('display-none');
 }

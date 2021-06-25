@@ -3,24 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 /* ::selection{
     color: rgb(0, 197, 105) !important;
     background-color: rgb(73, 73, 73) !important;
 } */
 
-:root {
+:root{
     font-size: 30px;
     --border: #3498db;
     --borderRadius: 75px;
     --darkOne: rgb(31, 31, 31);
 }
 
-html {
+html{
     scroll-behavior: smooth;
 }
 
-body {
+body{
     --scrollbar-width: calc(100vw - 100%);
     background-color: black;
     font-family: 'Poppins', sans-serif;
@@ -28,7 +29,7 @@ body {
     user-select: none !important;
 }
 
-header {
+header{
     font-family: 'Comfortaa', sans-serif;
     height: 100%;
     background: url(../picture/code-bg.jpg) no-repeat center center fixed;
@@ -96,7 +97,7 @@ header.first>img{
     margin-left: 90px;
 }
 
-header.second>h1 {
+header.second>h1{
     text-align: left;
     margin-left: 25px;
     font-size: 1rem;
@@ -112,8 +113,19 @@ header.second>img{
 .header-second-version{
     font-size: 15px;
     font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    right: 0;
+}
+.header-second-version:hover{
+    background-color: black;
 }
 
+/* Changelog */
 .version-infos{
     position: fixed;
     left: 110%;
@@ -129,7 +141,7 @@ header.second>img{
 }
 
 .blur{
-    filter: blur(10px);
+    filter: blur(30px);
     transition: .75s;
 }
 
@@ -137,6 +149,10 @@ header.second>img{
     font-size: 70px;
     text-align: center;
     margin-top: 110px;
+}
+.version-infos-title:hover{
+    text-decoration: underline 1px;
+    cursor: pointer;
 }
 
 .hr{
@@ -153,6 +169,7 @@ header.second>img{
 .version-infos-version{
     margin-top: 80px;
     margin-left: 10%;
+    transition: .3s;
 }
 
 .version-infos-version-id{
@@ -178,6 +195,33 @@ header.second>img{
 .version-infos-version-desc>ul>li::before{
     content: '- ';
 }
+
+.slide-out{
+    /* margin-left: -100%; */
+    opacity: 0;
+    transition: .025s;
+}
+
+.fade-in{
+    display: block;
+    animation: FadeIn 1s;
+    transition: 1.5s;
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#sneak_peek{
+    position: absolute;
+    margin-top: -27.5%;
+}
+/* endsection */
 
 main{
     margin-top: 520px;
@@ -235,7 +279,7 @@ a {
 }
 
 footer {
-    /* z-index: 10; */
+    z-index: 10;
     background-color: black;
     color: white;
     text-align: start;
@@ -488,8 +532,23 @@ h3{
 }
 /* endsection */
 
+h3{
+    z-index: 100;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
 section{
-    border-bottom: 3px blueviolet solid;
+    background-color: rgb(27, 27, 27);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#projects-section{
+    padding-top: 50px;
 }
 
 .turn-header-first-image{
@@ -509,4 +568,84 @@ section{
     margin-left: -110%;
     transition: .75s cubic-bezier(0, 1, 1, 1);
     filter: blur(0px);
+}
+
+#displayInfosElement{
+    position: fixed;
+    height: 25px;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -25px;
+    z-index: 200;
+    font-size: 17px;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 11000;
+}
+
+#die_infos{
+    position: absolute;
+    right: 50px;
+}
+
+.bar{
+    position: relative;
+    width: 250px;
+    height: 25px;
+    padding: 2.5px;
+    background-color: black;
+}
+
+.bar-ninety-pourcents{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(33, 221, 8);
+}
+
+.bar-seventy-five-pourcents{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(189, 223, 39);
+}
+
+.bar-fifty-pourcents{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(241, 241, 0);
+}
+
+.bar-twenty-five-pourcents{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: red;
+}
+
+.pourcents{
+    position: relative;
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -24px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.figure-title{
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 25px;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.martop-devtools-section{
+    margin-top: 50px;
 }
