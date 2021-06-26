@@ -292,7 +292,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 audio,
@@ -302,9 +302,8 @@ iframe,
 img,
 object,
 svg,
-video {
-    display: block;
-    vertical-align: middle
+video{
+    vertical-align: middle;
 }
 
 img,
