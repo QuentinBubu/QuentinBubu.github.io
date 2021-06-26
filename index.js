@@ -54,10 +54,6 @@ window.addEventListener('scroll' , function(){
   header.style.transform = "translateY("+valueVariant+"em)";
 })
 
-function overflowY() {
-  document.body.style.overflowY = "scroll";
-}
-
 var topOffset = document.getElementById('top').offsetTop;
 
 console.log("offsetTop #top [", topOffset, "]");
@@ -148,24 +144,12 @@ function changelogTitle(){
 //   document.getElementById(element_id).innerHTML = "v.3.0.0";
 // }
 
-function infosAbouVersionInfosBtn(){
+function infosAboutVersionInfosBtn(){
 	document.getElementById('die_infos').innerHTML = "[Version actuelle] Clickez pour ouvrir le change log.";
 	document.getElementById('displayInfosElement').style.marginBottom = "25px";
 }
-function infosAboutMediaLinks(){
-	document.getElementById('die_infos').innerHTML = "[Liens media] Plateformes de vidéos et directs.";
-	document.getElementById('displayInfosElement').style.marginBottom = "25px";
-}
-function infosAboutMailLinks(){
-	document.getElementById('die_infos').innerHTML = "[Liens mail] Boîtes mail.";
-	document.getElementById('displayInfosElement').style.marginBottom = "25px";
-}
-function infosAboutEcommerceLinks(){
-	document.getElementById('die_infos').innerHTML = "[Liens ecommerce] Ventes et achats.";
-	document.getElementById('displayInfosElement').style.marginBottom = "25px";
-}
-function infosAboutAnimeLinks(){
-	document.getElementById('die_infos').innerHTML = "[Liens anime] Plateforme d'animes.";
+function infosAboutScrollBtn(){
+	document.getElementById('die_infos').innerHTML = "[Scroll] Clickez pour scroller et découvrir le contenu.";
 	document.getElementById('displayInfosElement').style.marginBottom = "25px";
 }
 

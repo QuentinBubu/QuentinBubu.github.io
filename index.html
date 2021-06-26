@@ -38,7 +38,7 @@
     <header class="second" id="second">
         <img src="assets/picture/favicon.ico" alt="Quentin Bubu">
         <h1>Quentin Bubu</h1>
-        <p title="Change log" class="header-second-version" id="ver_inf_btn" onclick="versionInfosDisplay();" onmouseover="infosAbouVersionInfosBtn();" onmouseout="infosAboutNone();">v.3.0.0</p>
+        <p class="header-second-version" id="ver_inf_btn" onclick="versionInfosDisplay();" onmouseover="infosAboutVersionInfosBtn();" onmouseout="infosAboutNone();">v.3.0.0</p>
     </header>
 
     <div id="displayInfosElement">
@@ -58,28 +58,41 @@
             <div class="version-infos-version-desc">
                 <p class="vivd-name">Added</p>
                 <ul>
-                    <li>Create a change log.</li>
-                    <li>Create inpage bar for display informations about this website.</li>
+                    <li>Changelog.</li>
+                    <li>Sneak peek.</li>
                 </ul>
                 <p class="vivd-name">Changed</p>
                 <ul>
-                    <li>Fix several invalid links in the footer.</li>
+                    <li>Changement de plusieurs liens invalides dans le footer.</li>
+                    <li>Amélioration de la lisibilité du footer.</li>
+                    <li>Box retractables.</li>
+                    <li>Box à la place d'iframe dans la box Projects.</li>
+                    <li>Parallax du header.</li>
+                    <li>Barres avec pourcentage à la place d'images.</li>
                 </ul>
                 <p class="vivd-name">Removed</p>
                 <ul>
-                    <li>Vertical navbar.</li>
+                    <li>Barre de navigation verticale (aside).</li>
                 </ul>
             </div>
         </div>
 
         <div class="version-infos-version slide-out" id="sneak_peek">
             <div class="version-infos-version-infos">
-                <p class="version-infos-version-id">Bientôt...</p>
+                <p class="version-infos-version-id">Sneak peek</p>
             </div>
             <div class="version-infos-version-desc">
-                <p class="vivd-name">Nouvelle-s fonctionnalité-s</p>
+                <p class="vivd-name">+</p>
                 <ul>
-                    <li>Tableau de compétences à la place des skill-bars.</li>
+                    <li>Conception d'un style pour les boutons, diversification des polices.</li>
+                    <li>Flèche indiquant l'état des box (ouverte, fermée).</li>
+                    <li>Scroll désactivé pendant que le change log est ouvert.</li>
+                    <li>Changement des couleur de la scrollbar.</li>
+                    <li>Redirection des navigateurs mobiles vers la v.2.</li>
+                </ul>
+                <p class="vivd-name">-</p>
+                <ul>
+                    <li>Parallax du header (lag).</li>
                 </ul>
             </div>
         </div>
@@ -95,7 +108,7 @@
             la rigourosité sont mes principales qualités.<br>Sur ce, bonne visite !
         </p>
         <div class="scroll-down">
-            <a href="#langages" onclick="overflowY()"><span></span></a>
+            <a href="#langages" onmouseover="infosAboutScrollBtn();" onmouseout="infosAboutNone();"><span></span></a>
         </div>
         <article id="langages">
 
@@ -353,10 +366,7 @@
         <div class="column">
             <div class="ftr-infos">
                 <p>Quentin Bubu</p>
-                <p>J'aime le ski,
-                    J'aime le vélo,
-                    j'aime le code. ♥
-                </p>
+                <p style="font-style: italic;color: rgb(206, 206, 206);">"J'aime aussi le ski, le vélo, et l'informatique."</p>
             </div>
             <div class="ftr-networks">
                 <p class="ftr-item-category">Mes réseaux</p>
