@@ -577,7 +577,6 @@ section{
     background-color: black;
     left: 0;
     bottom: -25px;
-    z-index: 200;
     font-size: 17px;
     color: white;
     display: flex;
