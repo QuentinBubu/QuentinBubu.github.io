@@ -98,12 +98,7 @@ function pbSixOut(){
 }
 // endsection
 
-function turnHeaderFirstImage(){
-  document.getElementById('header_first_image').classList.add('turn-header-first-image');
-}
-
 var open = 0;
-
 function versionInfosDisplay(){
   if (open == 0){
     document.getElementById('ver_inf').classList.add('ver-inf-display');
@@ -145,17 +140,17 @@ function changelogTitle(){
 // }
 
 function infosAboutVersionInfosBtn(){
-	document.getElementById('die_infos').innerHTML = "[Version actuelle] Clickez pour ouvrir le change log.";
-	document.getElementById('displayInfosElement').style.marginBottom = "25px";
+  document.getElementById('die_infos').innerHTML = "[Version actuelle] Clickez pour ouvrir le change log.";
+  document.getElementById('displayInfosElement').style.marginBottom = "25px";
 }
 function infosAboutScrollBtn(){
-	document.getElementById('die_infos').innerHTML = "[Scroll] Clickez pour scroller et découvrir le contenu.";
-	document.getElementById('displayInfosElement').style.marginBottom = "25px";
+  document.getElementById('die_infos').innerHTML = "[Scroll] Clickez pour scroller et découvrir le contenu.";
+  document.getElementById('displayInfosElement').style.marginBottom = "25px";
 }
 
 function infosAboutNone(){
-	document.getElementById('die_infos').innerHTML = "";
-	document.getElementById('displayInfosElement').style.marginBottom = "-25px";
+  document.getElementById('die_infos').innerHTML = "";
+  document.getElementById('displayInfosElement').style.marginBottom = "-25px";
 }
 
 // Section.

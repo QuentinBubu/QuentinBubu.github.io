@@ -120,9 +120,14 @@ header.second>img{
     padding-right: 15px;
     position: absolute;
     right: 0;
+    /* width: 100px; */
 }
 .header-second-version:hover{
     background-color: black;
+}
+
+.header-btn{
+    margin-right: 111px;
 }
 
 /* Changelog */
@@ -138,6 +143,10 @@ header.second>img{
     overflow-y: auto;
     transition: .75s;
     filter: blur(10px);
+}
+
+.version-infos-version-desc{
+    margin-bottom: 115px;
 }
 
 .blur{
@@ -219,7 +228,7 @@ header.second>img{
 
 #sneak_peek{
     position: absolute;
-    margin-top: -565px;
+    margin-top: -905px;
 }
 /* endsection */
 
@@ -549,19 +558,6 @@ section{
 
 #projects-section{
     padding-top: 50px;
-}
-
-.turn-header-first-image{
-    animation: turnHeaderFirstImage 10s ease-out;
-}
-
-@keyframes turnHeaderFirstImage{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(36000deg);
-    }
 }
 
 .ver-inf-display{
