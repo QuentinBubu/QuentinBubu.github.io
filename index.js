@@ -33,12 +33,12 @@ let topOffset = document.querySelector("#top").offsetTop;
 
 document.querySelectorAll('.project-box').forEach((element) => {
     element.addEventListener('mouseover', function (card) {
-        (card.target.classList.contains('project-box') ? card.target.querySelector('.project-box-discover').classList.add('pbd-display') : 0);
+        element.target.querySelector('.project-box-discover').classList.add('pbd-display');
     }, false);
     element.addEventListener('mouseleave', function (card) {
-        (card.target.classList.contains('project-box') ? card.target.querySelector('.project-box-discover').classList.remove('pbd-display') : 0);
+        element.target.querySelector('.project-box-discover').classList.remove('pbd-display');
     }, false);
-}, false)
+}, false);
 
 
 function turnHeaderFirstImage() {
