@@ -1,62 +1,36 @@
-function sleep(ms) {
-  return new Promise(
-    resolve => setTimeout(resolve, ms)
-  );
-}
-
-var header = document.querySelector('header');
-var main = document.querySelector('main');
-var footer = document.querySelector('footer');
-var pageY = window.pageYOffset;
-
-function pageYCheck()
-{
-  while (true)
-  {
-    console.log("[", pageY, "] = pageY");
-    wait(2000);
-  }
-}
+const header = document.querySelector("header");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
+let pageY = window.pageYOffset;
 
 let below = false;
 window.onscroll = () => {
+ 
+    let Ypos = window.pageYOffset;
 
-  const Ypos = window.pageYOffset;
+    if (Ypos > 315 && !below) {
+        below = true;
+        document.querySelector("#second").id = "second-display";
+    } else if (Ypos < 315 && below) {
+        below = false;
+        console.log("Navbar inpage up");
+        document.querySelector("#second-display").id = "second";
+    }
+};
 
-  if(Ypos > 315 && !below) {
-
-    below = true;
-    console.log('Navbar inpage down');
-    // var element = document.getElementById("second");
-    document.getElementById("second").id = 'second-display';
-    // element.classList.add("second-display");
-
-  } else if(Ypos < 315 && below) {
-
-    below = false;
-    console.log('Navbar inpage up');
-    document.getElementById("second-display").id = 'second';
-    // element.classList.remove("second-display");
-
-  }
-
+let valueRefresh = window.scrollY / -600;
+if (valueRefresh !== 0) {
+    document.body.style.overflowY = "scroll";
 }
 
-let valueRefresh = window.scrollY/-600;
-if (valueRefresh != 0) {
-  document.body.style.overflowY = "scroll";
-}
+window.addEventListener("scroll", function () {
+    let value = 1 + window.scrollY / -600;
+    header.style.opacity = value;
+    let valueletiant = value - 1;
+    header.style.transform = "translateY(" + valueletiant + "em)";
+});
 
-window.addEventListener('scroll' , function(){
-  let value = 1 + window.scrollY/-600;
-  header.style.opacity = value;
-  let valueVariant = value-1;
-  header.style.transform = "translateY("+valueVariant+"em)";
-})
-
-var topOffset = document.getElementById('top').offsetTop;
-
-console.log("offsetTop #top [", topOffset, "]");
+let topOffset = document.querySelector("#top").offsetTop;
 
 // Project Box.
 function pbOne(){
@@ -98,46 +72,37 @@ function pbSixOut(){
 }
 // endsection
 
-var open = 0;
-function versionInfosDisplay(){
-  if (open == 0){
-    document.getElementById('ver_inf').classList.add('ver-inf-display');
-    document.querySelector('main').classList.add('blur');
-    document.querySelector('header').classList.add('blur');
-    document.querySelector('footer').classList.add('blur');
-    open = 1;
-  }
-  else{
-    document.getElementById('ver_inf').classList.remove('ver-inf-display');
-    document.querySelector('main').classList.remove('blur');
-    document.querySelector('header').classList.remove('blur');
-    document.querySelector('footer').classList.remove('blur');
-    open = 0;
-  }
+let open = 0;
+
+function versionInfosDisplay() {
+    if (open == 0) {
+        document.querySelector("#ver_inf").classList.add("ver-inf-display");
+        document.querySelector("main").classList.add("blur");
+        document.querySelector("header").classList.add("blur");
+        document.querySelector("footer").classList.add("blur");
+        open = 1;
+    } else {
+        document.querySelector("#ver_inf").classList.remove("ver-inf-display");
+        document.querySelector("main").classList.remove("blur");
+        document.querySelector("header").classList.remove("blur");
+        document.querySelector("footer").classList.remove("blur");
+        open = 0;
+    }
 }
 
-var sneakPeek = 0;
+let sneakPeek = 0;
 
-function changelogTitle(){
-  if (sneakPeek == 0){
-    document.getElementById('changelog').classList.add('slide-out');
-    document.getElementById('sneak_peek').classList.remove('slide-out');
-    sneakPeek = 1;
-  }
-  else{
-    document.getElementById('sneak_peek').classList.add('slide-out');
-    document.getElementById('changelog').classList.remove('slide-out');
-    sneakPeek = 0;
-  }
+function changelogTitle() {
+    if (sneakPeek == 0) {
+        document.querySelector("#changelog").classList.add("slide-out");
+        document.querySelector("#sneak_peek").classList.remove("slide-out");
+        sneakPeek = 1;
+    } else {
+        document.querySelector("#sneak_peek").classList.add("slide-out");
+        document.querySelector("#changelog").classList.remove("slide-out");
+        sneakPeek = 0;
+    }
 }
-
-// function verOn(element_id){
-//   document.getElementById(element_id).innerHTML = "Changelog";
-// }
-
-// function verOut(element_id){
-//   document.getElementById(element_id).innerHTML = "v.3.0.0";
-// }
 
 function infosAboutVersionInfosBtn(){
   document.getElementById('die_infos').innerHTML = "[Version actuelle] Clickez pour ouvrir le change log.";
@@ -154,7 +119,7 @@ function infosAboutNone(){
 }
 
 // Section.
-var retracta = 0;
-function retract(section_id){
-  document.getElementById(section_id).classList.toggle('display-none');
+let retracta = 0;
+function retract(section_id) {
+    document.getElementById(section_id).classList.toggle("display-none");
 }
