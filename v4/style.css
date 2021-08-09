@@ -89,37 +89,79 @@
     top: 0; left: 0;
     width: 100%; height: 100%;
     margin: 0; padding: 0;
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(73, 73, 73);
 }
 
 .diapo{
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    margin: 0;padding: 0;
+    margin: 0; padding: 0;
+    padding-left: 300px; padding-right: 300px;
+    background-color: rgba(31, 31, 31);
+}
+
+.diapo-title{
+    font-size: 75px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.diapo-text{
+    font-size: 22.5px;
 }
 
 #diapo1{
-    background-color: rgb(12, 204, 38);
+    transform: scale(1);
 }
 #diapo2{
-    background-color: rgb(61, 112, 112);
+    transform: scale(0);
 }
 
-#corner_btn_bar{
+.corner-btn-bar{
     position: absolute;
     bottom: 15px; right: 15px;
     height: 70px;
-    padding-left: 5px; padding-right: 5px;
-    border-radius: 30px;
-    background-color: white;
+    padding-left: 10px; padding-right: 10px;
+    border-radius: 35px;
+    background-color: rgba(73, 73, 73);
+    box-shadow: 0 0 15px 0 rgba(80, 80, 80, 0.39);
     display: flex;
     align-items: center;
     flex-direction: row;
+    z-index: 90;
+    transition: .3s;
+}
+.corner-btn-bar:hover{
+    box-shadow: 0 0 30px 0 rgba(73, 73, 73, 0.719);
 }
 
-#corner_btn{
+.corner-btn{
     width: 50px; height: 50px;
-    background-color: blueviolet;
+    padding: 0; margin: 0;
     border-radius: 50%;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    align-items: center; justify-content: center;
+    color: white;
+    transition: .3s;
+    z-index: 91;
+}
+.corner-btn:hover{
+    background-color: rgb(160, 70, 245);
+}
+
+#corner_btn_arrow_right{
+    width: 25px; height: 25px;
+    transform: rotate(180deg);
+}
+
+#corner_btn_arrow_left{
+    width: 25px; height: 25px;
+    transform: rotate(0deg);
+}
+
+.corner-btn-separator{
+    width: 10px;
 }
