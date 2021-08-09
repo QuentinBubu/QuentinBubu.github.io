@@ -199,7 +199,7 @@
     width: 100%; height: 100%;
     margin: 0; padding: 0;
     background-color: rgba(0, 0, 0, 0.589);
-    /* backdrop-filter: blur(2px); */
+    backdrop-filter: blur(10px);
     z-index: -1;
     transition: .3s;
 }
@@ -260,4 +260,86 @@
 
 .display-none{
     display: none;
+}
+
+.burger-menu-section{
+    background-color: rgb(126, 126, 126);
+    width: 80%;
+    margin-left: auto; margin-right: auto;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding-left: 20px; padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.burger-menu-section-title{
+    font-size: 25px;
+    margin: 0;
+}
+
+.burger-menu-section-martop{
+    height: 15px;
+}
+
+#burger-menu-section-links{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(160, 153, 153, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.burger-menu-section-links-item{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 2px solid black;
+    /* padding-left: 15px; padding-right: 15px; */
+    /* padding-bottom: 5px; padding-top: 5px; */
+    border-radius: 8px;
+    display: flex;
+    align-items: center; justify-content: center;
+    font-size: 20px;
+}
+
+#burger_menu_section_links_item_1{
+    grid-column: span 1;
+    grid-row: span 1;
+    color: rgb(106, 245, 255);
+    border-color: rgb(106, 245, 255);
+}
+#burger_menu_section_links_item_1:hover{
+    background-color: rgba(106, 245, 255, .1);
+}
+
+#burger_menu_section_links_item_2{
+    grid-column: span 2;
+    grid-row: span 1;
+    color: rgb(255, 74, 150);
+    border-color: rgb(255, 74, 150);
+}
+#burger_menu_section_links_item_2:hover{
+    background-color: rgba(255, 74, 150, .4);
+}
+
+#burger_menu_section_links_item_3{
+    grid-column: span 2;
+    grid-row: span 1;
+    color: rgb(255, 255, 106);
+    border-color: rgb(255, 255, 106);
+}
+#burger_menu_section_links_item_3:hover{
+    background-color: rgba(255, 255, 106, .1);
+}
+
+#burger_menu_section_links_item_4{
+    grid-column: span 1;
+    grid-row: span 1;
+    color: rgb(255, 106, 106);
+    border-color: rgb(255, 106, 106);
+}
+#burger_menu_section_links_item_4:hover{
+    background-color: rgba(255, 106, 106, .3);
 }

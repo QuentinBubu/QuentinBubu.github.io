@@ -59,3 +59,18 @@ body{
     border: none;
     scroll-behavior: smooth;
 }
+
+.btn-basic{
+    padding-top: 15px; padding-bottom: 15px;
+    padding-left: 20px; padding-right: 20px;
+    background-color: rgb(70, 70, 70);
+    width: max-content;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 17.5px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.btn-basic:hover{
+    background-color: rgb(85, 85, 85);
+}
