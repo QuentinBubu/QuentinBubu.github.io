@@ -1,3 +1,5 @@
+console.log("update.js is connected.");
+
 let currentVersion = "4.0.0.0";
 let updateIndicator = document.getElementById('home_header_infos_span');
 
