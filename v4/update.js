@@ -11,9 +11,9 @@ request.onload = function(){
     let jsonObjVersion = request.response;
     let latestVersion = jsonObjVersion['version'];
     if (currentVersion === latestVersion){
-        updateIndicator.innerHTML = "Pas de pull request en attente.";
+        updateIndicator.innerHTML = 'Pas de pull request en attente.';
     }
     else if (currentVersion !== latestVersion){
-        updateIndicator.innerHTLM = "Pull request en attente. <a>https://github.com/QuentinBubu/QuentinBubu.github.io</a>";
+        updateIndicator.innerHTML = '<span style="background: red;">Pull request en attente.</span>';
     }
 }
