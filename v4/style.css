@@ -2,7 +2,8 @@
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: white;
+    background-color: rgba(31, 31, 31);
+    color: white;
     z-index: 100;
     margin: 0; padding: 0;
     border: none; outline: none;
@@ -11,23 +12,38 @@
     flex-direction: column;
     transform: translateX(0%);
     opacity: 0;
-    animation: welcomeScreenFrame .5s forwards;
+    /* animation: welcomeScreenFrame 3.5s forwards; */
+    animation: welcomeScreenFrame 0s forwards;
 }
 
 #welcome_screen>img{
     width: 125px;
     pointer-events: none;
-    transform: translateY(10px);
+    transform: translateY(5px);
     border-radius: 50%;
+    border: 2px solid gray;
     /* animation: welcomeScreenImage 2.5s forwards; */
+    animation: borderWelcomescreenImg 1.5s forwards ease-out;
+}
+
+@keyframes borderWelcomescreenImg{
+    from{
+        transform: scale(.8);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
 
 #welcome_screen_title{
     /* display: none; */
-    color: black;
-    font-size: 35px;
+    color: white;
+    font-size: 50px;
     font-weight: 600;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     opacity: 1;
     /* animation: welcomeScreenText 2.5s forwards; */
 }
@@ -77,7 +93,8 @@
     bottom: 0; left: 0;
     width: 100%;
     height: 25px;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(73, 73, 73);
+    color: white;
     margin: 0; padding: 0;
     display: flex;
     align-items: center;
@@ -99,6 +116,7 @@
     margin: 0; padding: 0;
     padding-left: 20%; padding-right: 20%;
     background-color: rgba(31, 31, 31);
+    overflow-y: scroll;
 }
 
 .diapo-title{
@@ -170,4 +188,46 @@
 
 .corner-btn-separator{
     width: 10px;
+}
+
+#burger_menu_alpha{
+    position: fixed;
+    top: 0; right: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    backdrop-filter: blur(2px);
+    z-index: 85;
+    display: none;
+}
+
+#burger_menu{
+    position: absolute;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgb(94, 94, 94);
+    z-index: 86;
+}
+
+.burger-menu-alpha-toggle{
+    display: block;
+    transition: 0s;
+    animation: burgerMenuAlphaToggle .3s forwards;
+}
+
+@keyframes burgerMenuAlphaToggle{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.burger-menu-toggle{
+    transform: translateX(-350px);
+    transition: .3s;
 }
