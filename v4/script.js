@@ -3,9 +3,12 @@ console.log("script.js is connected.");
 let diapoCanvas = document.getElementById('diaporama_canvas');
 let diapo1 = document.getElementById('diapo1');
 let diapo2 = document.getElementById('diapo2');
+let cornerBtnBar = document.getElementById('corner_btn_bar');
 let cornerBtn1 = document.getElementById('corner_btn_1');
 let cornerBtn2 = document.getElementById('corner_btn_2');
 let cornerBtn3 = document.getElementById('corner_btn_3');
+let cornerBtnSeparator1 = document.getElementById('corner_btn_separator_1');
+let cornerBtnSeparator2 = document.getElementById('corner_btn_separator_2');
 let menuBurgerAlpha = document.getElementById('burger_menu_alpha');
 let menuBurger = document.getElementById('burger_menu');
 
@@ -29,6 +32,11 @@ cornerBtn3.onclick = function(){
         menuBurger.classList.toggle('burger-menu-toggle');
         diapoCanvas.classList.add('diaporama-canvas-slide-open');
         diapoCanvas.classList.remove('diaporama-canvas-slide-close');
+        cornerBtnBar.style = 'width: 70px;';
+        cornerBtn1.classList.toggle('display-none');
+        cornerBtn2.classList.toggle('display-none');
+        cornerBtnSeparator1.classList.toggle('display-none');
+        cornerBtnSeparator2.classList.toggle('display-none');
         cornerBtn3Clicked = true;
     } else {
         menuBurgerAlpha.classList.remove('burger-menu-alpha-open');
@@ -37,6 +45,11 @@ cornerBtn3.onclick = function(){
         menuBurger.classList.toggle('burger-menu-toggle');
         diapoCanvas.classList.remove('diaporama-canvas-slide-open');
         diapoCanvas.classList.add('diaporama-canvas-slide-close');
+        cornerBtnBar.style = 'width: auto;';
+        cornerBtn1.classList.toggle('display-none');
+        cornerBtn2.classList.toggle('display-none');
+        cornerBtnSeparator1.classList.toggle('display-none');
+        cornerBtnSeparator2.classList.toggle('display-none');
         cornerBtn3Clicked = false;
     }
 }
