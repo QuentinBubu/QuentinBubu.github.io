@@ -7,11 +7,11 @@ let cornerBtn2 = document.getElementById('corner_btn_2');
 
 let transitionTime = .5;
 cornerBtn2.onclick = function(){
-    diapo1.style = `transform: scale(0); transition: ${transitionTime}s;`;
-    diapo2.style = `transform: scale(1); transition: ${transitionTime}s;`;
+    diapo1.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
+    diapo2.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
 }
 
 cornerBtn1.onclick = function(){
-    diapo1.style = `transform: scale(1); transition: ${transitionTime}s;`;
-    diapo2.style = `transform: scale(0); transition: ${transitionTime}s;`;
+    diapo1.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
+    diapo2.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
 }

@@ -97,7 +97,7 @@
     top: 0; left: 0;
     width: 100%; height: 100%;
     margin: 0; padding: 0;
-    padding-left: 300px; padding-right: 300px;
+    padding-left: 20%; padding-right: 20%;
     background-color: rgba(31, 31, 31);
 }
 
@@ -112,10 +112,12 @@
 
 #diapo1{
     transform: scale(1);
+    opacity: 1;
 }
 
 #diapo2{
     transform: scale(0);
+    opacity: 0;
 }
 
 .corner-btn-bar{
@@ -153,13 +155,16 @@
     background-color: rgb(160, 70, 245);
 }
 
-#corner_btn_arrow_right{
+.corner-btn-svg{
+    color: white;
     width: 25px; height: 25px;
+}
+
+#corner_btn_arrow_right{
     transform: rotate(180deg);
 }
 
 #corner_btn_arrow_left{
-    width: 25px; height: 25px;
     transform: rotate(0deg);
 }
 
