@@ -5,6 +5,15 @@
     display: none;
 }
 
+a{
+    color: rgb(167, 83, 247);
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
 .contextual-menu-open{
     transform: translateY(-120px);
     transition: .15s ease-out;
