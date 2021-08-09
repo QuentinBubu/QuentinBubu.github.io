@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le portfolio intéractif de Quentin Bubu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="ui_controller">
+
+        <div id="contextual_menu_alpha"></div>
+
+        <div id="home">
+
+            <div id="welcome_screen">
+                <img src="../icons/news-512.png">
+                <p id="welcome_screen_title">Actuality Feed</p>
+                <div id="welcome_screen_footer"><p>v.1.0.0 · Codée par Went Lab</p></div>
+            </div>
+
+            <div id="home_header">
+                <p id="home_header_title">Actuality Feed</p>
+                <p id="home_header_infos"><span id="home_header_infos_span">Connection...</span><a id="home_header_infos_link" href="https://matrix.to/#/!lxcPRdYLgtJDHXJlWo:matrix.org?via=matrix.org" target="_blank" title="Découvrez les mises à&#13;jour en avance (sneak peek)" tabindex="1">Matrix</a></p>
+            </div>
+            <div id="home_header_banner">
+                <!-- <img id="home_header_banner_img" src="./img/jpg/actuality-feed-banner.jpg"> -->
+            </div>
+            <div id="home_news">
+                <a href="./posts/news001/news001.html" class="home-news-link"><div id="btn_news001" class="home-news-item" tabindex="2">
+                    <p class="home-news-item-title">F.A.Q. générale #1</p>
+                    <p class="home-news-item-text">Foire aux questions générale d'Août 2021.</p>
+                    <p class="home-news-item-infos">Went Lab · 5.8.21 <span id="text_markasread_news001"></span></p>
+                </div></a>
+                <!-- <hr>
+                <div class="home-news-item"></div>
+                <hr>
+                <div class="home-news-item"></div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="../update.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+#welcome_screen{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: white;
+    z-index: 100;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    display: flex;
+    align-items: center; justify-content: center;
+    flex-direction: column;
+    transform: translateX(0%);
+    opacity: 0;
+    animation: welcomeScreenFrame 3.5s forwards;
+}
+
+#welcome_screen>img{
+    width: 125px;
+    pointer-events: none;
+    transform: translateY(17.5px);
+    /* animation: welcomeScreenImage 2.5s forwards; */
+}
+
+#welcome_screen_title{
+    /* display: none; */
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+    transform: translateY(-17.5px);
+    opacity: 1;
+    /* animation: welcomeScreenText 2.5s forwards; */
+}
+
+@keyframes welcomeScreenFrame{
+    from{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 0;
+    }
+    96%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes welcomeScreenImage{
+    from{
+        transform: translateY(25px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes welcomeScreenText{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+#welcome_screen_footer{
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(218, 218, 218);
+    margin: 0; padding: 0;
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+}
+
+#home{
+    transition: .5s;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgb(245, 245, 245);
+    z-index: 3;
+}
+
+#home_header{
+    position: absolute;
+    width: 90%;
+    top: 20px;
+    left: 5%;
+    height: auto;
+    overflow: hidden;
+    z-index: 5;
+}
+
+#home_header_title{
+    margin-top: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#home_header_infos{
+    color: white;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+#home_header_infos_link{
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    color: white;
+    background: rgb(138, 43, 226);
+    background: linear-gradient(90deg, rgba(138,43,226,1) 0%, rgba(191,121,255,1) 100%);
+    padding-left: 7px; padding-right: 7px;
+    padding-bottom: 4px;
+    padding-top: 1.9px;
+    border: none;
+    border-radius: 5px;
+    /* border-radius: 2.5px; */
+    transform: translateX(-3px);
+    transition: .5s;
+}
+
+#home_header_banner{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 135px;
+    overflow: hidden;
+    z-index: 4;
+    margin: 0; padding: 0;
+    display: flex;
+    align-items: center; justify-content: center;
+    background-color: rgb(31, 31, 31);
+}
+
+#home_header_banner_img{
+    margin-top: -80px;
+    margin-left: -50px;
+    width: 125%;
+}
+
+#home_news{
+    position: absolute;
+    top: 150px;
+    left: 5%;
+    bottom: 15px;
+    width: 90%;
+    height: auto;
+    z-index: 6;
+}
+
+.home-news-link{
+    text-decoration: none;
+}
+
+.home-news-item{
+    hyphens: auto;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding-left: 10px; padding-right: 10px;
+    margin-top: -25px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(224, 224, 224, 0.555);
+}
+.home-news-item:hover{
+    /* transform: translateX(3.5px); */
+    box-shadow: 0 5px 15px 1px rgba(187, 187, 187, 0.568);
+}
+.home-news-item:focus{
+    /* transform: translateX(3.5px); */
+    box-shadow: 0 4px 15px 0 rgba(187, 187, 187, 0.459);
+}
+
+#home_news>hr{
+    width: 80%;
+    height: 0px;
+    margin-top: 7.5px; margin-bottom: 7.5px;
+    background-color: rgba(95, 71, 71, 0);
+    border: none;
+}
+
+.home-news-item-title{
+    font-size: 22.5px;
+    transform: translateY(5px);
+}
+
+.home-news-item-text{
+    font-size: 12.5px;
+    margin-top: -15px;
+}
+
+.home-news-item-infos>span{
+    color: rgb(17, 180, 17);
+}

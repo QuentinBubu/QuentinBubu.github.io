@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+.hidden{
+    display: none;
+}
+
+.contextual-menu-open{
+    transform: translateY(-120px);
+    transition: .15s ease-out;
+}
+
+.contextual-menu-alpha-open{
+    z-index: 100002 !important;
+    background-color: rgba(0, 0, 0, 0.315) !important;
+    transition: .15s ease-out;
+}
+
+*{
+    user-select: none;
+    font-size: 100%;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background-color: rgb(31, 31, 31);
+    min-width: 250px;
+    min-height: 400px;
+    max-width: 251px;
+    max-height: 401px;
+    width: 250px;
+    height: 400px;
+    margin: 0; padding: 0;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+#ui_controller{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-color: rgb(31, 31, 31);
+    margin: 0; padding: 0;
+    overflow: hidden;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+#contextual_menu{
+    position: absolute;
+    bottom: -120px; left: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 0; padding: 0;
+    z-index: 100003;
+    display: none;
+    transition: .15s ease-out;
+}
+
+#contextual_menu>a{
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center; justify-content: center;
+    text-decoration: none;
+    transition: .3s linear;
+}
+#contextual_menu>a:hover{
+    background-color: rgb(209, 234, 255);
+    color: black;
+    text-indent: 6px;
+    transition: .3s;
+}
+
+#contextual_menu_alpha{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0; padding: 0;
+    z-index: 0;
+    transition: .15s ease-out;
+}
