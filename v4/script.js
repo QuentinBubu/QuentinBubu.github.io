@@ -1,12 +1,13 @@
 console.log("script.js is connected.");
 
+let diapoCanvas = document.getElementById('diaporama_canvas');
 let diapo1 = document.getElementById('diapo1');
 let diapo2 = document.getElementById('diapo2');
 let cornerBtn1 = document.getElementById('corner_btn_1');
 let cornerBtn2 = document.getElementById('corner_btn_2');
 let cornerBtn3 = document.getElementById('corner_btn_3');
-let menuBurgerAlpha = document.getElementById('menu_burger_alpha');
-let menuBurger = document.getElementById('menu_burger');
+let menuBurgerAlpha = document.getElementById('burger_menu_alpha');
+let menuBurger = document.getElementById('burger_menu');
 
 let transitionTime = .5;
 cornerBtn2.onclick = function(){
@@ -19,7 +20,23 @@ cornerBtn1.onclick = function(){
     diapo2.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
 }
 
+let cornerBtn3Clicked = false;
 cornerBtn3.onclick = function(){
-    menuBurgerAlpha.classList.toggle('menu-burger-alpha-toggle');
-    menuBurger.classList.toggle('menu-burger-toggle');
+    if (cornerBtn3Clicked === false){
+        menuBurgerAlpha.classList.add('burger-menu-alpha-open');
+        menuBurgerAlpha.classList.remove('burger-menu-alpha-close');
+        menuBurgerAlpha.style = 'z-index: 85; transition: 0s;';
+        menuBurger.classList.toggle('burger-menu-toggle');
+        diapoCanvas.classList.add('diaporama-canvas-slide-open');
+        diapoCanvas.classList.remove('diaporama-canvas-slide-close');
+        cornerBtn3Clicked = true;
+    } else {
+        menuBurgerAlpha.classList.remove('burger-menu-alpha-open');
+        menuBurgerAlpha.classList.add('burger-menu-alpha-close');
+        menuBurgerAlpha.style = 'z-index: -1; transition: .3s;';
+        menuBurger.classList.toggle('burger-menu-toggle');
+        diapoCanvas.classList.remove('diaporama-canvas-slide-open');
+        diapoCanvas.classList.add('diaporama-canvas-slide-close');
+        cornerBtn3Clicked = false;
+    }
 }
