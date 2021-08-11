@@ -54,9 +54,9 @@ th{
     font-size: 100%;
     box-sizing: border-box;
     outline: none;
-    scroll-behavior: smooth;
     font-family: 'Barlow', sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -70,7 +70,6 @@ body{
     height: 400px;
     margin: 0; padding: 0;
     border: none;
-    scroll-behavior: smooth;
 }
 
 #ui_controller{
@@ -81,7 +80,6 @@ body{
     margin: 0; padding: 0;
     overflow: hidden;
     border: none;
-    scroll-behavior: smooth;
 }
 
 .btn-basic{
