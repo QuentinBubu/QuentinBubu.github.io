@@ -129,6 +129,18 @@
     text-align: justify;
 }
 
+.diapo-text-h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid white;
+    display: block;
+    width: 25%;
+    margin-top: 75px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
 #diapo1{
     transform: scale(1);
     opacity: 1;
@@ -199,7 +211,6 @@
     width: 100%; height: 100%;
     margin: 0; padding: 0;
     background-color: rgba(0, 0, 0, 0.589);
-    backdrop-filter: blur(10px);
     z-index: -1;
     transition: .3s;
 }
@@ -211,9 +222,12 @@
     width: 350px;
     height: 100%;
     margin: 0; padding: 0;
+    padding-bottom: 30px;
     background-color: rgb(94, 94, 94);
     z-index: 86;
     opacity: 1 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
     transition: .3s;
 }
 

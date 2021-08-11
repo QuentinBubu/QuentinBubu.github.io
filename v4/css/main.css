@@ -14,6 +14,30 @@ a:hover{
     text-decoration: underline;
 }
 
+table{
+    font-size: 20px;
+    margin-top: 50px;
+    width: 100%;
+    /* background-color: darkblue; */
+    border-collapse: collapse;
+    border-radius: 11px;
+    overflow: hidden;
+    background-color: rgb(50, 50, 50);
+}
+
+tr{
+    height: 50px;
+    text-indent: 10px;
+}
+tr:hover{
+    background-color: rgb(61, 61, 61);
+}
+
+th{
+    text-align: left;
+    background-color: rgb(70, 70, 70);
+}
+
 .contextual-menu-open{
     transform: translateY(-120px);
     transition: .15s ease-out;
