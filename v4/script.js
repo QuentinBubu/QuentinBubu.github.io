@@ -3,6 +3,7 @@ console.log("script.js is connected.");
 let diapoCanvas = document.getElementById('diaporama_canvas');
 let diapo1 = document.getElementById('diapo1');
 let diapo2 = document.getElementById('diapo2');
+let diapo3 = document.getElementById('diapo3');
 let cornerBtnBar = document.getElementById('corner_btn_bar');
 let cornerBtn1 = document.getElementById('corner_btn_1');
 let cornerBtn2 = document.getElementById('corner_btn_2');
@@ -11,16 +12,31 @@ let cornerBtnSeparator1 = document.getElementById('corner_btn_separator_1');
 let cornerBtnSeparator2 = document.getElementById('corner_btn_separator_2');
 let menuBurgerAlpha = document.getElementById('burger_menu_alpha');
 let menuBurger = document.getElementById('burger_menu');
+let diapoMark = 1;
 
 let transitionTime = .5;
 cornerBtn2.onclick = function(){
-    diapo1.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
-    diapo2.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
+    if (diapoMark === 1){
+        diapoMark = 2;
+        diapo1.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
+        diapo2.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
+    }else{
+        diapoMark = 3;
+        diapo2.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
+        diapo3.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
+    }
 }
 
 cornerBtn1.onclick = function(){
-    diapo1.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
-    diapo2.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
+    if (diapoMark === 3){
+        diapoMark = 2;
+        diapo3.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
+        diapo2.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
+    }else{
+        diapoMark = 1;
+        diapo2.style = `transform: scale(0); opacity: 0; transition: ${transitionTime}s;`;
+        diapo1.style = `transform: scale(1); opacity: 1; transition: ${transitionTime}s;`;
+    }
 }
 
 let cornerBtn3Clicked = false;
