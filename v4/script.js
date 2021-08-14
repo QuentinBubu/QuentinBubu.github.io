@@ -13,6 +13,10 @@ let cornerBtnSeparator2 = document.getElementById('corner_btn_separator_2');
 let menuBurgerAlpha = document.getElementById('burger_menu_alpha');
 let menuBurger = document.getElementById('burger_menu');
 let diapoMark = 1;
+let changelogBtn = document.getElementById('changelog_btn');
+let aboutBtn = document.getElementById('about_btn');
+let infosChangelog = document.getElementById('infos_changelog');
+let infosAbout = document.getElementById('infos_about');
 
 let transitionTime = .5;
 cornerBtn2.onclick = function(){
@@ -68,4 +72,14 @@ cornerBtn3.onclick = function(){
         cornerBtnSeparator2.classList.toggle('display-none');
         cornerBtn3Clicked = false;
     }
+}
+
+changelogBtn.onclick = function(){
+    menuBurger.style = "transform: translateX(-540%); opacity: 0 !important; transition: .5s;";
+    infosChangelog.style = "transform: translateX(-100%); transition: .8s;";
+}
+
+aboutBtn.onclick = function(){
+    menuBurger.style = "transform: translateX(-540%); opacity: 0 !important; transition: .5s;";
+    infosAbout.style = "transform: translateX(-100%); transition: .8s;";
 }
