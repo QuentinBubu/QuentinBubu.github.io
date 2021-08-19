@@ -554,3 +554,76 @@
         margin-top: 25px;
     }
 }
+
+.notif{
+    position: fixed;
+    bottom: 0; left: 0;
+    width: max-content;
+    height: 50px;
+    margin: 0; padding: 0;
+    padding-left: 30px; padding-right: 30px;
+    background-color: rgb(53, 53, 53);
+    z-index: 1000000000000000;
+    border: 3px dashed red;
+    display: flex;
+    align-items: center; justify-content: center;
+    text-align: center;
+    transform: translateX(0px);
+    opacity: 0;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: .15s;
+}
+.notif:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.notif>p{
+    color: white;
+    text-align: center;
+    z-index: 1000000000000002;
+}
+
+.notif-display-time-indicator{
+    position: absolute;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgb(90, 90, 90);
+    transform: translateX(-100%);
+}
+
+@keyframes openNotif{
+    from{
+        /* transform: translateX(-100%); */
+        opacity: 0;
+    }
+    2.5%{
+        /* transform: translateX(0px); */
+        opacity: 1;
+    }
+    97.5%{
+        /* transform: translateX(0px); */
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        /* transform: translateX(-100%); */
+    }
+}
+
+@keyframes notifDisplayTimeIndicator{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.notif-open{
+    animation: openNotif 25s ease-out forwards;
+}
+
+.notif-display-time-indicator-open{
+    animation: notifDisplayTimeIndicator 25s linear forwards;
+}
