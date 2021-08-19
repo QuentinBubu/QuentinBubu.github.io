@@ -378,7 +378,7 @@
     z-index: 110;
 }
 
-.changelog-bar{
+.infos-bar{
     position: absolute;
     top: 0; left: 0;
     width: 100%;
@@ -388,7 +388,7 @@
     color: white;
 }
 
-.changelog-bar>div{
+.infos-bar>div{
     position: absolute;
     top: 0; left: 0;
     width: 75px; height: 75px;
@@ -396,12 +396,12 @@
     display: flex;
     align-items: center; justify-content: center;
 }
-.changelog-bar>div:hover{
+.infos-bar>div:hover{
     background-color: rgb(94, 94, 94);
     cursor: pointer;
 }
 
-.changelog-bar>p{
+.infos-bar>p{
     position: absolute;
     top: 0; left: 75px;
     width: calc(100% - 75px); height: 100%;
@@ -461,4 +461,96 @@
     top: 75px; left: 0;
     width: 100%; height: calc(100% - 75px);
     margin: 0; padding: 0;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+}
+
+.ver-history-item{
+    width: 70%;
+    height: max-content;
+    margin: 0;
+    padding: 30px;
+    font-size: 25px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 16px;
+    margin-top: 75px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgb(53, 53, 53);
+    transition: .15s;
+}
+.ver-history-item:hover{
+    box-shadow: 0 0 15px 0 rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
+}
+
+.ver-history-item>p{
+    margin-left: 25px;
+    color: white;
+}
+
+.ver-history-item-ver{
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.ver-history-item-details{
+    line-height: 5px;
+}
+
+.about-item-list{
+    position: absolute;
+    top: 75px; left: 0;
+    width: 100%; height: calc(100% - 75px);
+    margin: 0; padding: 0;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+}
+
+.about-item{
+    width: 70%;
+    height: max-content;
+    margin: 0;
+    padding: 30px;
+    font-size: 25px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 16px;
+    margin-top: 75px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgb(53, 53, 53);
+    transition: .15s;
+}
+.about-item:hover{
+    box-shadow: 0 0 15px 0 rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
+}
+
+.about-item>p{
+    margin-left: 25px;
+    color: white;
+}
+
+.about-item-title{
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.about-item-details{
+    line-height: 5px;
+}
+
+@media screen and (max-width: 1050px){
+    .infos-item{
+        width: 90%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .infos-item{
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 25px;
+    }
 }

@@ -17,6 +17,8 @@ let changelogBtn = document.getElementById('changelog_btn');
 let aboutBtn = document.getElementById('about_btn');
 let infosChangelog = document.getElementById('infos_changelog');
 let infosAbout = document.getElementById('infos_about');
+let changelogCloseBtn = document.getElementById('changelog_close_btn');
+let aboutCloseBtn = document.getElementById('about_close_btn');
 
 let transitionTime = .5;
 cornerBtn2.onclick = function(){
@@ -75,11 +77,17 @@ cornerBtn3.onclick = function(){
 }
 
 changelogBtn.onclick = function(){
-    menuBurger.style = "transform: translateX(-540%); opacity: 0 !important; transition: .5s;";
-    infosChangelog.style = "transform: translateX(-100%); transition: .8s;";
+    infosChangelog.style = "transform: translateX(-100%); transition: .5s;";
 }
 
 aboutBtn.onclick = function(){
-    menuBurger.style = "transform: translateX(-540%); opacity: 0 !important; transition: .5s;";
-    infosAbout.style = "transform: translateX(-100%); transition: .8s;";
+    infosAbout.style = "transform: translateX(-100%); transition: .5s;";
+}
+
+changelogCloseBtn.onclick = function(){
+    infosChangelog.style = "transform: translateX(0%); transition: .5s;";
+}
+
+aboutCloseBtn.onclick = function(){
+    infosAbout.style = "transform: translateX(0%); transition: .5s;";
 }
