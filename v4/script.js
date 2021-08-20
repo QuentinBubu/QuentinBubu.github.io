@@ -91,3 +91,47 @@ changelogCloseBtn.onclick = function(){
 aboutCloseBtn.onclick = function(){
     infosAbout.style = "transform: translateX(0%); transition: .5s;";
 }
+
+let happyBirthday = true;
+let noHappyBirthday = 0;
+let noEnglishCardinalNumbersIndicator = noHappyBirthday;
+let sentence = 0;
+let englishCardinalNumbersIndicator = "";
+
+if (happyBirthday === true){
+    setInterval("happybir()", 1000);
+}
+
+function happybir(){
+    noHappyBirthday++;
+    noEnglishCardinalNumbersIndicator++;
+    if (noEnglishCardinalNumbersIndicator === 1) {
+        englishCardinalNumbersIndicator = "st";
+    } else if (noEnglishCardinalNumbersIndicator === 2) {
+        englishCardinalNumbersIndicator = "nd";
+    } else if (noEnglishCardinalNumbersIndicator === 3) {
+        englishCardinalNumbersIndicator = "rd";
+    } else {
+        englishCardinalNumbersIndicator = "th";
+    }
+    if (noEnglishCardinalNumbersIndicator === 10) {
+        noEnglishCardinalNumbersIndicator = 0;
+        sentence++;
+        if (sentence === 1){
+            console.log("> Cet algorithme m'a pris beaucoup de temps ! 🥱");
+        } else if (sentence === 2) {
+            console.log("> Houlà, je préfère le C#! 😥");
+        } else if (sentence === 3) {
+            console.log("> A votre avis, combien y aura-t-il de phrases à la fin de l'année ? 🤔");
+        } else if (sentence === 4) {
+            console.log("> ✨ Liens utiles ✨\nGitHub - https://github.com/QuentinBubu\nInstagram - https://www.instagram.com/Quentin_bubu/\nTwitter - https://twitter.com/BubuQuentin\nAdresse mail - quentinbubu.dev@gmail.com");
+        } else if (sentence === 5) {
+            console.log("[information] Les \"happy birthday!\" seront retirés lors de la prochaine MàJ. 😏");
+        } else if (sentence === 6) {
+            console.log("> Pour vous recompenser de votre incroyable courage, je vous offre le code de mon crypteur (comme je suis le seul à l'avoir 🤣) !\nRead the bin - https://bin.readthedocs.fr/ientha.cs");
+        } else {
+            console.log("[information] Vous pouvez partir, toutes les phrases ont été affichées. 😅");
+        }
+    }
+    console.log(noHappyBirthday + englishCardinalNumbersIndicator + " happy birthday!");
+}

@@ -22,3 +22,8 @@ request.onload = function(){
         console.log("The website is up to date.");
     }
 }
+
+function updateAvailable(){
+    notif.classList.add('notif-open');
+    notifDisplayTimeIndicator.classList.add('notif-display-time-indicator-open');
+}

@@ -13,7 +13,7 @@
     transform: translateX(0%);
     opacity: 0;
     /* animation: welcomeScreenFrame 3.5s forwards; */
-    animation: welcomeScreenFrame 0s forwards;
+    animation: welcomeScreenFrame 3.5s forwards;
 }
 
 #welcome_screen>img{
@@ -22,19 +22,23 @@
     transform: translateY(5px);
     border-radius: 50%;
     border: 2px solid gray;
+    transform: scale(1.2);
     /* animation: welcomeScreenImage 2.5s forwards; */
-    animation: borderWelcomescreenImg 1.5s forwards ease-out;
+    /* animation: borderWelcomescreenImg 2.5s forwards ease-out; */
+}
+
+#second_img{
+    width: 90px !important;
+    border: none !important;
+    border-radius: 0px !important;
 }
 
 @keyframes borderWelcomescreenImg{
     from{
         transform: scale(.8);
     }
-    75%{
-        transform: scale(1.2);
-    }
     to{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 
