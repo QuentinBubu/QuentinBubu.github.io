@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.hidden{
+    display: none;
+}
+
+a{
+    color: rgb(167, 83, 247);
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+img{
+    pointer-events: none !important;
+}
+
+table{
+    font-size: 20px;
+    margin-top: 50px;
+    width: 100%;
+    /* background-color: darkblue; */
+    border-collapse: collapse;
+    border-radius: 11px;
+    overflow: hidden;
+    background-color: rgb(50, 50, 50);
+}
+
+tr{
+    height: 50px;
+    text-indent: 10px;
+}
+tr:hover{
+    background-color: rgb(61, 61, 61);
+}
+
+th{
+    text-align: left;
+    background-color: rgb(70, 70, 70);
+}
+
+.contextual-menu-open{
+    transform: translateY(-120px);
+    transition: .15s ease-out;
+}
+
+.contextual-menu-alpha-open{
+    z-index: 100002 !important;
+    background-color: rgba(0, 0, 0, 0.315) !important;
+    transition: .15s ease-out;
+}
+
+*{
+    user-select: none;
+    font-size: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+    background-color: rgb(31, 31, 31);
+    min-width: 250px;
+    min-height: 400px;
+    max-width: 251px;
+    max-height: 401px;
+    width: 250px;
+    height: 400px;
+    margin: 0; padding: 0;
+    border: none;
+}
+
+#ui_controller{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-color: rgb(31, 31, 31);
+    margin: 0; padding: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.btn-basic{
+    padding-top: 15px; padding-bottom: 15px;
+    padding-left: 20px; padding-right: 20px;
+    background-color: rgb(70, 70, 70);
+    width: max-content;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 17.5px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.btn-basic:hover{
+    background-color: rgb(85, 85, 85);
+}
