@@ -1,6 +1,6 @@
 console.log("update.js is connected.");
 
-let currentVersion = "4.0.0.0";
+let currentVersion = "4.0.0.2";
 let notif = document.getElementById('notif');
 let notifDisplayTimeIndicator = document.getElementById('notif_display_time_indicator');
 

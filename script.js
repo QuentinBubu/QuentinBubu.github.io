@@ -15,10 +15,13 @@ let menuBurger = document.getElementById('burger_menu');
 let diapoMark = 1;
 let changelogBtn = document.getElementById('changelog_btn');
 let aboutBtn = document.getElementById('about_btn');
+let myprojectsBtn = document.getElementById('myprojects_btn');
 let infosChangelog = document.getElementById('infos_changelog');
 let infosAbout = document.getElementById('infos_about');
+let infosMyprojects = document.getElementById('infos_myprojects');
 let changelogCloseBtn = document.getElementById('changelog_close_btn');
 let aboutCloseBtn = document.getElementById('about_close_btn');
+let myprojectsCloseBtn = document.getElementById('myprojects_close_btn');
 
 let transitionTime = .5;
 cornerBtn2.onclick = function(){
@@ -76,12 +79,20 @@ cornerBtn3.onclick = function(){
     }
 }
 
+myprojectsBtn.onclick = function(){
+    infosMyprojects.style = "transform: translateX(-100%); transition: .5s;";
+}
+
 changelogBtn.onclick = function(){
     infosChangelog.style = "transform: translateX(-100%); transition: .5s;";
 }
 
 aboutBtn.onclick = function(){
     infosAbout.style = "transform: translateX(-100%); transition: .5s;";
+}
+
+myprojectsCloseBtn.onclick = function(){
+    infosMyprojects.style = "transform: translateX(0%); transition: .5s;";
 }
 
 changelogCloseBtn.onclick = function(){
@@ -98,8 +109,12 @@ let noEnglishCardinalNumbersIndicator = noHappyBirthday;
 let sentence = 0;
 let englishCardinalNumbersIndicator = "";
 
+// if (happyBirthday === true){
+//     setInterval("happybir()", 1000);
+// }
+
 if (happyBirthday === true){
-    setInterval("happybir()", 1000);
+    setInterval("happybir()", 100);
 }
 
 function happybir(){
@@ -126,12 +141,12 @@ function happybir(){
         } else if (sentence === 4) {
             console.log("> ✨ Liens utiles ✨\nGitHub - https://github.com/QuentinBubu\nInstagram - https://www.instagram.com/Quentin_bubu/\nTwitter - https://twitter.com/BubuQuentin\nAdresse mail - quentinbubu.dev@gmail.com");
         } else if (sentence === 5) {
-            console.log("[information] Les \"happy birthday!\" seront retirés lors de la prochaine MàJ. 😏");
+            // console.log("[information] Les \"happy birthday!\" seront retirés lors de la prochaine MàJ. 😏");
         } else if (sentence === 6) {
             console.log("> Pour vous recompenser de votre incroyable courage, je vous offre le code de mon crypteur (comme je suis le seul à l'avoir 🤣) !\nRead the bin - https://bin.readthedocs.fr/ientha.cs");
         } else {
             console.log("[information] Vous pouvez partir, toutes les phrases ont été affichées. 😅");
         }
     }
-    console.log(noHappyBirthday + englishCardinalNumbersIndicator + " happy birthday!");
+    // console.log(noHappyBirthday + englishCardinalNumbersIndicator + " happy birthday!");
 }
