@@ -124,6 +124,31 @@
     overflow-y: scroll;
 }
 
+@media screen and (max-width: 1300px){
+    .diapo{
+        padding-left: 10%; padding-right: 10%;
+    }
+}
+@media screen and (max-width: 700px){
+    .diapo{
+        padding-left: 5%; padding-right: 5%;
+    }
+    .diapo-title{
+        font-size: 55px !important;
+    }
+    .diapo-text{
+        font-size: 19.5px !important;
+    }
+}
+@media screen and (max-width: 400px){
+    .diapo-title{
+        font-size: 45px !important;
+    }
+    .diapo-text{
+        font-size: 17.5px !important;
+    }
+}
+
 .diapo-title{
     font-size: 75px;
     font-family: 'Abril Fatface', cursive;
@@ -479,13 +504,7 @@
     background-color: rgb(53, 53, 53);
     border-radius: 16px;
     margin-top: 75px;
-    cursor: pointer;
-    box-shadow: 0 0 5px 0 rgb(53, 53, 53);
     transition: .15s;
-}
-.ver-history-item:hover{
-    box-shadow: 0 0 15px 0 rgb(56, 56, 56);
-    background-color: rgb(56, 56, 56);
 }
 
 .ver-history-item>p{
@@ -521,13 +540,7 @@
     background-color: rgb(53, 53, 53);
     border-radius: 16px;
     margin-top: 75px;
-    cursor: pointer;
-    box-shadow: 0 0 5px 0 rgb(53, 53, 53);
     transition: .15s;
-}
-.about-item:hover{
-    box-shadow: 0 0 15px 0 rgb(56, 56, 56);
-    background-color: rgb(56, 56, 56);
 }
 
 .about-item>p{

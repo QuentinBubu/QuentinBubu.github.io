@@ -18,6 +18,16 @@ img{
     pointer-events: none !important;
 }
 
+@media screen and (max-width: 700px){
+    table{
+        font-size: 15px !important;
+    }
+    tr{
+        text-indent: 5px !important;
+        white-space: nowrap !important;
+    }
+}
+
 table{
     font-size: 20px;
     margin-top: 50px;
