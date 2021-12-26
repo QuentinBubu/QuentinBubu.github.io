@@ -65,3 +65,14 @@ body > section {
 #arrow-up > svg path {
     animation: arrow-up infinite 2s;
 }
+
+h3 {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+}
+
+h3::before {
+    display: inline-block;
+    content: '►';
+    margin: 2px;
+}

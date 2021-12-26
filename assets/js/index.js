@@ -35,7 +35,7 @@ window.addEventListener("scroll", function () {
 function scrollAddY(direction) {
     const winHeight = window.innerHeight,
         scroll = window.pageYOffset || document.documentElement.scrollTop;
-    let goTo = Math.floor(scroll / winHeight) + direction * winHeight;
+    let goTo = Math.floor(scroll / winHeight) * winHeight + direction * winHeight;
     window.scrollTo({ top: goTo, behavior: "smooth" });
 }
 
@@ -53,6 +53,15 @@ arrowRight.addEventListener("click", () => { diapo(1) })
 arrowLeft.addEventListener("click", () => { diapo(-1) })
 disposition.addEventListener("click", () => {changeDisposition()})
 
+diapos.forEach((e, i) => {
+    e.querySelector("img").addEventListener("click", () => {
+        currentDiapo = 0
+        changeDisposition()
+        diapo(i)
+        currentDiapo = i
+    })
+})
+
 function diapo(direction) {
     let show;
 
@@ -68,16 +77,6 @@ function diapo(direction) {
     diapos[show].classList.toggle('current')
     currentDiapo = show
 }
-
-diapos.forEach((e, i) => {
-    e.addEventListener("click", () => {
-        currentDiapo = 0
-        changeDisposition()
-        diapo(i)
-        currentDiapo = i
-    })
-})
-
 
 function changeDisposition () {
     if (dispo === 0) {

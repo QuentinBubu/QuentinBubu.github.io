@@ -19,17 +19,6 @@
     opacity: 0;
 }
 
-#p-2 > h3 {
-    text-decoration: underline;
-    text-decoration-skip-ink: auto;
-}
-
-#p-2 > h3::before {
-    display: inline-block;
-    content: '►';
-    margin: 2px;
-}
-
 #p-2-arrow-left > svg,
 #p-2-arrow-right > svg {
     width: 75px;
@@ -76,6 +65,7 @@
 
 #p-2-langage-container img {
     height: 100%;
+    cursor: pointer;
 }
 
 #p-2-langage-container figcaption {
@@ -96,6 +86,13 @@
     cursor: pointer;
 }
 
+#p-2-disposition:hover,
+#p-2-arrow-right svg:hover,
+#p-2-arrow-left svg:hover {
+    fill: white;
+    filter: none;
+}
+
 .container-grid {
     grid-template-columns: repeat(4, 1fr);
 }
@@ -108,5 +105,4 @@
 .container-grid > .langage > img {
     width: 75%;
     height: auto !important;
-    cursor: pointer;
 }
