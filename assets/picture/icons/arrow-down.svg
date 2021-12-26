@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="63.321 0 200 203.102" width="200" height="203.102" xmlns="http://www.w3.org/2000/svg">
+  <g>
+      <ellipse style="filter: none; stroke: rgb(0, 0, 0); stroke-width: 0px; stroke-miterlimit: 1;" cx="166.194" cy="95.402" rx="100.012" ry="99.988" transform="matrix(0.99988, 0.015508, 0, 1.00012, -2.852602, 3.560115)"/>
+        <path d="M 234.321 118.664 L 175.644 63.543 C 165.796 54.296 145.558 72.793 155.4 82.041 L 194.784 119.034 L 154.303 156.028 C 144.186 165.274 163.876 183.773 173.996 174.523 L 234.311 119.403 Z M 174.825 118.664 L 116.145 63.543 C 106.3 54.296 86.059 72.793 95.905 82.041 L 135.288 119.034 L 94.808 156.028 C 84.687 165.274 104.379 183.773 114.497 174.523 L 174.815 119.403 Z" style="fill: white; stroke: black; vector-effect: non-scaling-stroke; stroke-width: 1px;" id="e4_shape" transform="matrix(0.000127, 1, -1, 0.000127, 282.171428, -44.140043)"/>
+  </g>
+</svg>

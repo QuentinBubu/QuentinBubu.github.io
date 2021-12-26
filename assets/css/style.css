@@ -1,0 +1,67 @@
+@import 'variables.css';
+@import 'reset.css';
+@import 'animations.css';
+
+@import 'sub/p-1.css';
+@import 'sub/p-2.css';
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+    border-radius: 100px;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+body > section {
+    height: 100vh;
+    width: 100%;
+}
+
+#arrow-down,
+#arrow-up {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#arrow-down {
+    bottom: 0;
+}
+
+#arrow-up {
+    transform: rotate(180deg);
+    top: 0;
+}
+
+#arrow-down > svg,
+#arrow-up > svg {
+    width: 50px;
+    height: 50px;
+}
+
+#arrow-up > svg {
+    display: none;
+}
+
+#arrow-down > svg path {
+    animation: arrow-down infinite 2s;
+}
+
+#arrow-up > svg path {
+    animation: arrow-up infinite 2s;
+}

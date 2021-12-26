@@ -1,0 +1,27 @@
+@keyframes arrow-up {
+    0% {
+        transform: matrix(0.000127, 1, -1, 0.000127, 282.171428, -44.140043) translateX(0);
+    }
+
+    25% {
+        transform: matrix(0.000127, 1, -1, 0.000127, 282.171428, -44.140043) translateX(-20%);
+    }
+
+    100% {
+        transform: matrix(0.000127, 1, -1, 0.000127, 282.171428, -44.140043) translateX(0);
+    }
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: matrix(0.000127, 1, -1, 0.000127, 282.171428, -44.140043) translateX(0);
+    }
+
+    25% {
+        transform: matrix(0.000127, 1, -1, 0.000127, 282.171428, -44.140043) translateX(-20%);
+    }
+
+    100% {
+        transform: matrix(0.000127, 1, -1, 0.000127, 282.171428, -44.140043) translateX(0);
+    }
+}
