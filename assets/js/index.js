@@ -31,7 +31,7 @@ window.addEventListener("scroll", function () {
 function scrollAddY(direction) {
     const winHeight = window.innerHeight,
         scroll = window.pageYOffset || document.documentElement.scrollTop;
-    let goTo = Math.floor(scroll / winHeight) * winHeight + direction * winHeight;
+    let goTo = Math.round(scroll / winHeight) * winHeight + direction * winHeight;
     window.scrollTo({ top: goTo, behavior: "smooth" });
 }
 
