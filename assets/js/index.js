@@ -10,10 +10,6 @@ ityped.init(document.querySelector("#p-1 > h1"), {
 const arrowUp = document.querySelector("#arrow-up > svg"),
     arrowDown = document.querySelector("#arrow-down > svg");
 
-window.addEventListener('load', () => {
-
-})
-
 arrowUp.addEventListener("click", () => {
     scrollAddY(-1);
 });
