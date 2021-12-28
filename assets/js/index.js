@@ -75,23 +75,18 @@ function diapo(direction) {
 }
 
 function changeDisposition () {
+    diapos[currentDiapo].classList.toggle('current')
+    langageContainner.classList.toggle("container-grid")
     if (dispo === 0) {
-        diapos[currentDiapo].classList.remove('current')
-        arrowRight.style.display = "none"
-        arrowLeft.style.display = "none"
-        diapos.forEach((e) => {
-            e.querySelector("figcaption").style.display = "none"
-        })
-        langageContainner.classList.add("container-grid")
+        display = "none"
         dispo = 1
     } else {
-        diapos[currentDiapo].classList.add('current')
-        arrowRight.style.display = "block"
-        arrowLeft.style.display = "block"
-        diapos.forEach((e) => {
-            e.querySelector("figcaption").style.display = "block"
-        })
-        langageContainner.classList.remove("container-grid")
+        display = "block"
         dispo = 0
     }
+    arrowRight.style.display = display
+    arrowLeft.style.display = display
+    diapos.forEach((e) => {
+        e.querySelector("figcaption").style.display = display
+    })
 }
