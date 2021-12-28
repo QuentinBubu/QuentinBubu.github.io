@@ -7,7 +7,7 @@
 
 #p-2 > *[data-scroll] {
     opacity: 0;
-    transition: opacity 2500ms;
+    transition: opacity 5s;
 }
 
 #p-2 > *[data-scroll = "in"] {
