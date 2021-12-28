@@ -4,6 +4,7 @@
 
 @import 'sub/p-1.css';
 @import 'sub/p-2.css';
+@import 'sub/p-6.css';
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -23,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    color: var(--font-color);
 }
 
 body > section {

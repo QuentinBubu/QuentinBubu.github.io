@@ -357,3 +357,8 @@
   [hidden] {
     display: none;
   }
+
+  a {
+    color: var(--font-color);
+    cursor: pointer;
+  }
