@@ -4,6 +4,7 @@
 
 @import 'sub/p-1.css';
 @import 'sub/p-2.css';
+@import 'sub/p-3.css';
 @import 'sub/p-6.css';
 
 ::-webkit-scrollbar {
@@ -17,6 +18,13 @@
 ::-webkit-scrollbar-thumb {
     background: #5a5a5a;
     border-radius: 100px;
+}
+
+.d-f-c-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
