@@ -1,0 +1,23 @@
+#p-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#p-4-container {
+    flex-grow: 1;
+    width: 75%;
+    align-self: center;
+    margin-top: 50px;
+}
+
+#p-4 > ul {
+    font-size: 1.5rem;
+}
+
+.p-4-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
