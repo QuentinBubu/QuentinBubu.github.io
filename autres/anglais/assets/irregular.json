@@ -485,10 +485,10 @@
             "2": "ressentir"
         }
     },
-    "forsee": {
-        "Base verbale": "forsee",
-        "Prétérit": "forsaw",
-        "Participe passé": "forseen",
+    "foresee": {
+        "Base verbale": "foresee",
+        "Prétérit": "foresaw",
+        "Participe passé": "foreseen",
         "Traduction": "prévoir"
     },
     "grow up": {
@@ -758,8 +758,8 @@
         "Participe passé": "sung",
         "Traduction": "chanter"
     },
-    "teauch": {
-        "Base verbale": "tauch",
+    "teach": {
+        "Base verbale": "teach",
         "Prétérit": "taught",
         "Participe passé": "taught",
         "Traduction": {
@@ -778,5 +778,35 @@
         "Prétérit": "understood",
         "Participe passé": "understood",
         "Traduction": "comprendre"
+    },
+    "let": {
+        "Base verbale": "let",
+        "Prétérit": "let",
+        "Participe passé": "let",
+        "Traduction": {
+            "1": "permettre",
+            "2": "louer"
+        }
+    },
+    "shut": {
+        "Base verbale": "shut",
+        "Prétérit": "shut",
+        "Participe passé": "shut",
+        "Traduction": "fermer"
+    },
+    "fight": {
+        "Base verbale": "fight",
+        "Prétérit": "fought",
+        "Participe passé": "fought",
+        "Traduction": {
+            "1": "se battre",
+            "2": "combattre"
+        }
+    },
+    "hold": {
+        "Base verbale": "hold",
+        "Prétérit": "held",
+        "Participe passé": "held",
+        "Traduction": "tenir"
     }
 }
