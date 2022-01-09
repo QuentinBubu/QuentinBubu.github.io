@@ -26,6 +26,10 @@ const subject = [
 ];
 const mode = ["affirmative", "négative", "interrogative"];
 
+const preset = {
+    t1: "prétérit/present-perfect/past-perfect|break/build/catch/do/fall/get/lead/lose/make/put/set/shake/throw/win/beat/bite/forbid/hurt/shoot/steal/strike/tear/undergo/forgive/give/have/keep/lend/meet/say/send/show/speak/swear/take/tell/write/bend/come/drive/fly/go/leave/ride/rise/run/sit/swim/awake/bear/become/blow/choose/dream/feel/hear/hide/lie/light/see/sleep/spend/wake up/wear/buy/burn/drink/eat/freeze/grow/pay/sell/smell/begin/bring/cut/draw/forget/find/know/learn/mean/read/ring/stand/stick/sing/think/understand/foresee/teach/let/shut/fight/hold",
+};
+
 save.addEventListener("click", function () {
     let final = "";
     const sentences = document.querySelectorAll(".sentences:checked");
@@ -51,17 +55,21 @@ load.addEventListener("change", () => {
     const file = load.files[0];
     reader.addEventListener("load", function (event) {
         element = event.target.result;
-        element = element.split("|");
-        element.forEach((element) => {
-            element.split("/").forEach((element) => {
-                element = element.replace(' ', '-');
-                let input = document.querySelector(`#${element}`);
-                input.setAttribute("checked", true);
-            });
-        });
+        loadVerbs(element);
     });
     reader.readAsText(file);
 });
+
+function loadVerbs(verbs) {
+    verbs = verbs.split("|");
+    verbs.forEach((element) => {
+        element.split("/").forEach((element) => {
+            element = element.replace(" ", "-");
+            let input = document.querySelector(`#${element}`);
+            input.setAttribute("checked", true);
+        });
+    });
+}
 
 window.addEventListener("load", async function () {
     try {
@@ -74,17 +82,23 @@ window.addEventListener("load", async function () {
                     input.setAttribute("type", "checkbox");
                     input.setAttribute("class", "choose");
                     input.setAttribute("value", key[0]);
-                    input.setAttribute("id", key[0].replace(' ', '-'));
+                    input.setAttribute("id", key[0].replace(" ", "-"));
                     selection.appendChild(input);
 
                     let label = document.createElement("label");
-                    label.setAttribute("for", key[0].replace(' ', '-'));
+                    label.setAttribute("for", key[0].replace(" ", "-"));
                     label.innerHTML = key[0];
                     selection.appendChild(label);
                 }
             });
     } catch (errors) {
         console.log(errors);
+    }
+
+    if (window.location.search.substring(1) != "") {
+        let url = new URL(window.location.search.substring(1));
+        ps = url.searchParams.get("preset");
+        loadVerbs(preset[ps]);
     }
 });
 
