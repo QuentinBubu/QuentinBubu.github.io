@@ -96,7 +96,7 @@ window.addEventListener("load", async function () {
     }
 
     if (window.location.search.substring(1) != "") {
-        let url = new URL(window.location.search.substring(1));
+        let url = new URL(window.location);
         ps = url.searchParams.get("preset");
         loadVerbs(preset[ps]);
     }
