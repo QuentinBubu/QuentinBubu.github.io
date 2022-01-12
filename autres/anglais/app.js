@@ -227,10 +227,11 @@ verify.addEventListener("click", function () {
             ) {
                 nb_word++;
                 const reponse = verify_sentences(element);
+                let saisie = element.querySelector("td:last-child");
+                saisie.removeAttribute('contenteditable')
                 if (reponse === true) {
                     nb_points++;
                 } else {
-                    let saisie = element.querySelector("td:last-child");
                     saisie.innerHTML = `
                                             <p class="red">${saisie.textContent}</p>
                                             <p class="green">${reponse}</p>
