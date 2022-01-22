@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verbes Irréguliers</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./voc.js" defer></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=h4cl8Jhm" defer></script>
+    <link rel="shortcut icon" href="/assets/picture/favicon.ico" type="image/x-icon" />
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5Z1E50SQHT"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-5Z1E50SQHT");
+        </script>
+</head>
+
+<body>
+    <header>
+        <h1 class="underline">Vocabulaire p101-109</h1>
+    </header>
+    <main>
+        <div>
+            <form id="form-selection">
+                <section id="selection"></section>
+                <hr />
+                <section>
+                    <button type="button" id="selectInput">Tout sélectionner</button>
+                    <button type="button" id="startTest">Lancer un test</button>
+                </section>
+            </form>
+            <div>
+                <button id="save">Enregistrer ma séléction</button>
+                <label for="load">Charger un fichier
+                    <input type="file" id="load" value="Charger une séléction" />
+                </label>
+            </div>
+        </div>
+        <div id="form">
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Français</td>
+                            <td>Anglais</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <button type="button" id="verify">Vérifier</button>
+                            </td>
+                            <td colspan="3" id="score">Score:</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <a href="./assets/voc.json" target="_BLANK" class="underline">
+                Voir tous les mots (format brut)
+            </a>
+        </p>
+        <p>
+            Auteur: QuentinBubu. En cas de soucis, veuillez ouvrir
+            <a href="https://github.com/QuentinBubu/QuentinBubu.github.io/issues/new" class="underline">une issue sur
+                GitHub</a>
+            ou me contacter par mail:
+            <a href="mailto:quentinbubu.dev@gmail.com" class="underline">quentinbubu.dev@gmail.com</a>, Merci.
+        </p>
+        <p>Merci à Léopold pour la retranscription!</p>
+    </footer>
+</body>
+
+</html>
