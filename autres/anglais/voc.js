@@ -51,7 +51,7 @@ function loadVerbs(verbs) {
 
 window.addEventListener("load", async function () { // words selection generation
     try {
-        await (await fetch("./assets/voc.json"))
+        await (await fetch("./assets/voc2.json"))
             .json()
             .then(function (donnees) {
                 data = donnees;
