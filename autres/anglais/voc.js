@@ -40,13 +40,11 @@ load.addEventListener("change", () => {
 });
 
 function loadVerbs(verbs) {
-    verbs.forEach((element) => {
         element.split("/").forEach((element) => {
             element = element.replace(" ", "-");
             let input = document.querySelector(`#${element}`);
             input.setAttribute("checked", true);
         });
-    });
 }
 
 window.addEventListener("load", async function () { // words selection generation
