@@ -2,6 +2,6 @@
     font-size: 1.2rem;
 }
 
-#p-1-1 {
-    margin: 20px;
+#p-1-1 > div {
+    padding: 20px;
 }

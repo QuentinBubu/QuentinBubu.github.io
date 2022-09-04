@@ -5,6 +5,7 @@ ityped.init(document.querySelector("#p-1 > h1"), {
     backDelay: 1000,
     cursorChar: "_",
 });
+document.querySelector("#p-1 > h1").textContent = ""
 
 // Page scroll
 const arrowUp = document.querySelector("#arrow-up > svg"),
