@@ -3,6 +3,7 @@
 @import 'animations.css';
 
 @import 'sub/p-1.css';
+@import 'sub/p-1-1.css';
 @import 'sub/p-2.css';
 @import 'sub/p-3.css';
 @import 'sub/p-4.css';
@@ -87,4 +88,18 @@ h3::before {
     display: inline-block;
     content: '►';
     margin: 2px;
+}
+
+
+body > section *[data-scroll] {
+    opacity: 0;
+    transition: opacity 2500ms;
+}
+
+body > section *[data-scroll = "in"] {
+    opacity: 1;
+}
+
+body > section *[data-scroll = "out"] {
+    opacity: 0;
 }

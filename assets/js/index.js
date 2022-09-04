@@ -1,6 +1,6 @@
 // iTyped
 ityped.init(document.querySelector("#p-1 > h1"), {
-    strings: ["Portfolio de Quentin Bubu", "Scroller pour défiler!"],
+    strings: ["Portfolio de Quentin Bubu", "Scroller pour découvrir!"],
     typeSpeed: 100,
     backDelay: 1000,
     cursorChar: "_",
