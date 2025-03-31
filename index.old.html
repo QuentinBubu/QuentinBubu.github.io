@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Quentin Bubu</title>
+</head>
+<body class="bg-gray-100">
+    <!-- Conteneur principal -->
+    <main class="min-h-screen flex flex-col">
+        <!-- Section des images interactives centrées -->
+        <div class="flex-grow flex items-center justify-center p-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+                <!-- Image 1 -->
+                <a href="/page1" class="relative group transition-transform duration-300 transform hover:scale-105">
+                    <img src="image1.jpg" alt="Lien 1" class="w-full h-64 object-cover rounded-lg shadow-xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                </a>
+
+                <!-- Image 2 -->
+                <a href="/page2" class="relative group transition-transform duration-300 transform hover:scale-105">
+                    <img src="image2.jpg" alt="Lien 2" class="w-full h-64 object-cover rounded-lg shadow-xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                </a>
+
+                <!-- Image 3 -->
+                <a href="/page3" class="relative group transition-transform duration-300 transform hover:scale-105">
+                    <img src="image3.jpg" alt="Lien 3" class="w-full h-64 object-cover rounded-lg shadow-xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg"></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section des boutons -->
+        <div class="flex justify-around mb-8 space-x-4">
+            <a href="/cuisine.html" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 shadow-md">
+                Cuisine
+            </a>
+            <a href="/dev.html" class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300 shadow-md">
+                Développement
+            </a>
+            <a href="/ski.html" class="px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors duration-300 shadow-md">
+                Ski
+            </a>
+        </div>
+    </main>
+</body>
+</html>
