@@ -81,16 +81,32 @@
             <section class="modal" id="modal-cv">
                 <div class="modal-background"></div>
                 <section id="download-cv" class="modal-content">
-                    <article>
-                        <p>Vous essayez de télécharger un fichier avec des informations personnelles...</p>
-                        <p>Pour éviter que ces dernières soient lues par des robots, nous allons procéder à une courte vérification...</p>
-                        <p>Parait-il, les robots ne savent pas sourire, faites donc votre plus beau sourire !</p>
-                        <p>Encore, un petit effort ! On dirait un chat qui a vu une regex !</p>
-                        <p>Ahhh voilà un beau sourire ! J'arrête de vous faire des blagues peu drôles !<br>
-                            Vous pouvez cliquer <a href="CV.pdf" download="CV-quentin-buffard">ici</a> pour finaliser le téléchargement !<br>
-                            Bonne journée !
-                        </p>
+                    <article id="cv-steps">
+                        <div class="step" style="display: block;">
+                            <p>Vous essayez de télécharger un fichier avec des informations personnelles...</p>
+                        </div>
+                        <div class="step" style="display: none;">
+                            <p>Pour éviter que ces dernières soient lues par des robots, nous allons procéder à une courte vérification...</p>
+                        </div>
+                        <div class="step" style="display: none;">
+                            <p>Parait-il, les robots ne savent pas sourire, faites donc votre plus beau sourire !</p>
+                        </div>
+                        <div class="step" style="display: none;">
+                            <p>Encore, un petit effort ! On dirait un chat qui a vu une regex !</p>
+                        </div>
+                        <div class="step" style="display: none;">
+                            <p>Ahhh voilà un beau sourire ! J'arrête de vous faire des blagues peu drôles !<br>
+                                Vous pouvez cliquer <a href="CV.pdf" download="CV-quentin-buffard">ici</a> pour finaliser le téléchargement !<br>
+                                Bonne journée !
+                                <p>
+                                    <small><i>Cliquez n'importe où pour fermer</i></small>
+                                </p>
+                            </p>
+                        </div>
                     </article>
+                    <div class="buttons is-right mt-4">
+                        <button class="button is-link" id="next-step">Suivant</button>
+                    </div>
                     <button class="modal-close is-large" aria-label="close"></button>
                 </section>
             </section>
@@ -112,7 +128,30 @@
             <h2 class="title">D'accord mais... Quel est ton parcours scolaires et quelles sont tes expériences ?</h2>
             <ul class="ml-4 cbp_tmtimeline">
                 <li>
-                    <time class="cbp_tmtime" datetime="2025-08-31">31/08/2025</time>
+                    <time class="cbp_tmtime" datetime="2025-03-20">20/03/2025</time>
+                    <div class="cbp_tmicon"></div>
+                    <div class="cbp_tmlabel">
+                        <h3>Projet Rust de contrôle d'imprimante 3D.</h3>
+                        <p>Contrôle d'une impression à distance via une caméra et des commande. Utilisation d'un Raspberry Pi pour le serveur Apache, Docker et contrôle des commandes.</p>
+                        <p>Collaboration, rigeur</p>
+                        <ul class="is-flex is-justify-content-space-between">
+                            <li><a class="tag is-link is-medium"
+                                    href="">Rust</a></li>
+                            <li><a class="tag is-link is-medium"
+                                    href="https://www.rust-lang.org/">Rust</a></li>
+                            <li><a class="tag is-link is-medium"
+                                    href="https://www.raspberrypi.com/">Raspberry Pi</a></li>
+                            <li><a class="tag is-link is-medium"
+                                    href="https://www.docker.com/">Docker</a></li>
+                            <li><a class="tag is-link is-medium"
+                                    href="https://www.apache.org/">Apache</a></li>
+                            <li><span class="tag is-success is-medium">Collaboration</span></li>
+                            <li><span class="tag is-success is-medium">Rigueur</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="2024-08-31">31/08/2024</time>
                     <div class="cbp_tmicon"></div>
                     <div class="cbp_tmlabel">
                         <h3>Alternance en tant que développeur polyvalent chez IPM France.</h3>
@@ -125,6 +164,10 @@
                             <li><a class="tag is-link is-medium"
                                     href="https://apexcharts.github.io/Blazor-ApexCharts/">Blazor ApexCharts</a></li>
                             <li><a class="tag is-link is-medium" href="https://tabblazor.com/">TabBlazor</a></li>
+                            <li><a class="tag is-link is-medium" href="">Linux</a></li>
+                            <li><a class="tag is-link is-medium" href="">Formation</a></li>
+                            <li><a class="tag is-link is-medium" href="">Tâches CRON</a></li>
+                            <li><a class="tag is-link is-medium" href="">Automatisation</a></li>
                         </ul>
                     </div>
                 </li>
@@ -132,7 +175,7 @@
                     <time class="cbp_tmtime" datetime="2024-07-04">04/07/2024</time>
                     <div class="cbp_tmicon"></div>
                     <div class="cbp_tmlabel">
-                        <h3>2<sup>ème</sup> année de Bachelor Universitaire de Technologie à l'IUT de Valence.</h3>
+                        <h3>3<sup>ème</sup> année de Bachelor Universitaire de Technologie à l'IUT de Valence.</h3>
                     </div>
                 </li>
                 <li>
