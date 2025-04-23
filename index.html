@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <script src="./assets/js/annim.js" defer></script>
     <script src="./assets/js/parallax.js" defer></script>
+    <script src="./assets/js/modalcv.js" defer></script>
     <title>Portfolio - Quentin Bubu</title>
 </head>
 
@@ -75,6 +76,25 @@
         </section>
     </header>
     <main class="is-size-4">
+        <aside>
+            <button type="button" class="js-modal-trigger" data-target="modal-cv" id="cv-open-modal">CV</button>
+            <section class="modal" id="modal-cv">
+                <div class="modal-background"></div>
+                <section id="download-cv" class="modal-content">
+                    <article>
+                        <p>Vous essayez de télécharger un fichier avec des informations personnelles...</p>
+                        <p>Pour éviter que ces dernières soient lues par des robots, nous allons procéder à une courte vérification...</p>
+                        <p>Parait-il, les robots ne savent pas sourire, faites donc votre plus beau sourire !</p>
+                        <p>Encore, un petit effort ! On dirait un chat qui a vu une regex !</p>
+                        <p>Ahhh voilà un beau sourire ! J'arrête de vous faire des blagues peu drôles !<br>
+                            Vous pouvez cliquer <a href="CV.pdf" download="CV-quentin-buffard">ici</a> pour finaliser le téléchargement !<br>
+                            Bonne journée !
+                        </p>
+                    </article>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </section>
+            </section>
+        </aside>
         <section class="section is-large" id="about-me">
             <h2 class="title mb-1">Avez-vous dit... <span class="strong pink-light">Quentin Bubu</span> ?</h2>
             <p class="subtitle"><span class="strong orange-light">Hey !</span> Je m'appelle Quentin,</p>
@@ -96,7 +116,7 @@
                     <div class="cbp_tmicon"></div>
                     <div class="cbp_tmlabel">
                         <h3>Alternance en tant que développeur polyvalent chez IPM France.</h3>
-                        <p>Amélioration de systèmes existants, mise en place de serveurs sous Linux, formation de nouveau stagiaires, </p>
+                        <p>Amélioration de systèmes existants, mise en place de serveurs sous Linux, formation de nouveau stagiaires</p>
                         <ul class="is-flex is-justify-content-space-between">
                             <li><a class="tag is-link is-medium"
                                     href="https://learn.microsoft.com/en-us/dotnet/csharp">C#</a></li>
